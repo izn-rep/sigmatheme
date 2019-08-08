@@ -1,0 +1,354 @@
+.page-content.container-fluid
+  .row
+    .col-md-4
+      .widget
+        .widget-heading.clearfix
+          h3.widget-title.pull-left Visitors
+          span.label.label-outline.label-primary.pull-right 78% Complete
+        .widget-body.text-center.p-0
+          .row.row-0.divider.mb-10
+            .col-xs-4
+              h6.fw-400.text-muted.text-uppercase Weekly
+              p 686,298
+            .col-xs-4
+              h6.fw-400.text-muted.text-uppercase Yesterday
+              p 55,298
+            .col-xs-4
+              h6.fw-400.text-muted.text-uppercase Today
+              p 65,298
+          p
+            span.text-success +3.26%
+            |  better than last week
+          .progress.progress-xs.mb-0
+            .progress-bar(role='progressbar', data-transitiongoal='78')
+    .col-md-4
+      .widget
+        .widget-heading.clearfix
+          h3.widget-title.pull-left Users
+          span.label.label-outline.label-success.pull-right 73% Complete
+        .widget-body.text-center.p-0
+          .row.row-0.divider.mb-10
+            .col-xs-4
+              h6.fw-400.text-muted.text-uppercase All Users
+              p 1,256,769
+            .col-xs-4
+              h6.fw-400.text-muted.text-uppercase New Users
+              p 124,382
+            .col-xs-4
+              h6.fw-400.text-muted.text-uppercase Today
+              p 6,439
+          p
+            span.text-success +2.14%
+            |  better than last week
+          .progress.progress-xs.mb-0
+            .progress-bar.progress-bar-success(role='progressbar', data-transitiongoal='73')
+    .col-md-4
+      .widget
+        .widget-heading.clearfix
+          h3.widget-title.pull-left Orders
+          span.label.label-outline.label-purple.pull-right 84% Complete
+        .widget-body.text-center.p-0
+          .row.row-0.divider.mb-10
+            .col-xs-4
+              h6.fw-400.text-muted.text-uppercase Monthly
+              p 1,347,659
+            .col-xs-4
+              h6.fw-400.text-muted.text-uppercase Weekly
+              p 224,382
+            .col-xs-4
+              h6.fw-400.text-muted.text-uppercase Today
+              p 60,439
+          p
+            span.text-success +2.92%
+            |  better than last week
+          .progress.progress-xs.mb-0
+            .progress-bar.progress-bar-purple(role='progressbar', data-transitiongoal='84')
+  .row
+    .col-lg-12
+      .widget
+        .widget-heading.clearfix
+          h3.widget-title.pull-left Global Analytics
+          ul.widget-tools.pull-right.list-inline
+            li
+              a.widget-collapse(href='javascript:;')
+                i.ion-chevron-up
+            li
+              a.widget-reload(href='javascript:;')
+                i.ion-refresh
+            li
+              a.widget-remove(href='javascript:;')
+                i.ion-close-round
+        .widget-body
+          .row
+            .col-md-7
+              #world-map(style='height: 315px')
+            .col-md-5
+              p The map above is a political map of the world centered on Europe and Africa. It shows the location of most of the world's countries and includes their names where space allows.
+              .table-responsive
+                table.table.mb-0.no-border
+                  tbody
+                    tr
+                      td
+                        i.flag-icon.flag-icon-de
+                      td Germany
+                      td $3,526
+                      td.text-muted 4.17%
+                      td.text-success +0.06%
+                    tr
+                      td
+                        i.flag-icon.flag-icon-ca
+                      td Canada
+                      td $3,129
+                      td.text-muted 4.09%
+                      td.text-success +0.08%
+                    tr
+                      td
+                        i.flag-icon.flag-icon-au
+                      td Australia
+                      td $2,357
+                      td.text-muted 3.15%
+                      td.text-danger -0.12%
+                    tr
+                      td
+                        i.flag-icon.flag-icon-fr
+                      td France
+                      td $2,143
+                      td.text-muted 2.89%
+                      td.text-success +0.06%
+                    tr
+                      td
+                        i.flag-icon.flag-icon-us
+                      td United States
+                      td $2,009
+                      td.text-muted 2.31%
+                      td.text-danger -0.01%
+  .row
+    .col-lg-12
+      .widget
+        .widget-heading.clearfix
+          h3.widget-title.pull-left Sales Analytics
+          ul.widget-tools.pull-right.list-inline
+            li
+              a.widget-collapse(href='javascript:;')
+                i.ion-chevron-up
+            li
+              a.widget-reload(href='javascript:;')
+                i.ion-refresh
+            li
+              a.widget-remove(href='javascript:;')
+                i.ion-close-round
+        .widget-body
+          .row
+            .col-md-8
+              .clearfix
+                #flot-sale-legend.pull-left
+                .pull-right
+                  .btn-group.btn-rounded(role='group', aria-label='Change date')
+                    button.btn.btn-default.btn-outline(type='button') Last 7 days
+                    button.btn.btn-default.btn-outline(type='button') Last month
+                    button.btn.btn-default.btn-outline(type='button') Last 3 months
+              #flot-sale(style='height: 351px')
+              .row.row-0.mt-10.text-center
+                .col-xs-4
+                  .fs-36.fw-300 $93,348
+                  span.fs-12.text-muted.text-uppercase Total Revenue 
+                  span.text-danger
+                    i.ion-arrow-down-c
+                    |  2.43%
+                .col-xs-4
+                  .fs-36.fw-300 22,649
+                  span.fs-12.text-muted.text-uppercase Total Sales 
+                  span.text-success
+                    i.ion-arrow-up-c
+                    |  6.54%
+                .col-xs-4
+                  .fs-36.fw-300 34,439
+                  span.fs-12.text-muted.text-uppercase Total Visitors 
+                  span.text-success
+                    i.ion-arrow-up-c
+                    |  5.62%
+            .col-md-4
+              .text-center
+                #esp-store2.easy-pie-chart(data-percent='100', style='position: relative; height: 240px; width: 240px; line-height: 236px; padding: 2px;')
+                  #esp-store1.easy-pie-chart(data-percent='76', style='position: absolute; top: 10px; left: 10px; height: 220px; width: 220px; line-height: 216px; padding: 2px;')
+                  #esp-store3.easy-pie-chart(data-percent='65', style='position: absolute; top: 20px; left: 20px; height: 200px; width: 200px; line-height: 196px; padding: 2px;')
+                  .fs-36.fw-300 $253,348
+                h6.fw-400.mt-20.mb-20.text-muted.text-uppercase 86% Complete
+              .table-responsive
+                table.table.mb-0.no-border
+                  thead
+                    tr
+                      th(style='width: 30%') Name
+                      th(style='width: 40%') Revenue
+                      th(style='width: 30%') Quantity
+                  tbody
+                    tr
+                      td Store 2
+                      td $98,599.00
+                      td 42,534
+                    tr
+                      td Store 1
+                      td $79,409.00
+                      td 37,984
+                    tr
+                      td Store 3
+                      td $67,430.00
+                      td 31,254
+  .row
+    .col-lg-12
+      .widget.no-border
+        table#order-table.table.table-hover.dt-responsive.nowrap(style='width: 100%')
+          thead
+            tr
+              th(style='width:10%') Order ID
+              th(style='width:25%') Customer
+              th.text-center(style='width:15%') Date Added
+              th.text-center(style='width:15%') Date Modified
+              th.text-right(style='width:10%') Total
+              th.text-center(style='width:10%') Status
+              th.text-center(style='width:15%') Tracking Number
+          tbody
+            tr
+              td 
+                a(href='javascript:;') #62409
+              td
+                .media
+                  .media-left.avatar
+                    img.media-object.img-circle(src=build+'images/users/10.jpg', alt='')
+                    span.status.bg-success
+                  .media-body
+                    h5.media-heading Kevin Reid
+                    p.text-muted.mb-0 (520) 462 8357
+              td.text-center 20 Sep 2016
+              td.text-center 20 Sep 2016
+              td.text-right $140.00
+              td.text-center
+                span.label.label-outline.label-purple Pending
+              td.text-center
+                i.ion-minus-round
+            tr
+              td
+                a(href='javascript:;') #62410
+              td
+                .media
+                  .media-left.avatar
+                    img.media-object.img-circle(src=build+'images/users/20.jpg', alt='')
+                    span.status.bg-success
+                  .media-body
+                    h5.media-heading Janet Barrett
+                    p.text-muted.mb-0 (684) 615 6124
+              td.text-center 20 Sep 2016
+              td.text-center 20 Sep 2016
+              td.text-right $120.00
+              td.text-center
+                span.label.label-outline.label-success Paid
+              td.text-center
+                i.ion-minus-round
+            tr
+              td
+                a(href='javascript:;') #62411
+              td
+                .media
+                  .media-left.avatar
+                    img.media-object.img-circle(src=build+'images/users/11.jpg', alt='')
+                    span.status.bg-danger
+                  .media-body
+                    h5.media-heading Karen May
+                    p.text-muted.mb-0 (631) 647 2324
+              td.text-center 20 Sep 2016
+              td.text-center 20 Sep 2016
+              td.text-right $590.00
+              td.text-center
+                span.label.label-outline.label-primary Shipped
+              td.text-center
+                | SIG659849
+            tr
+              td
+                a(href='javascript:;') #62412
+              td
+                .media
+                  .media-left.avatar
+                    img.media-object.img-circle(src=build+'images/users/06.jpg', alt='')
+                    span.status.bg-warning
+                  .media-body
+                    h5.media-heading Harry Walsh
+                    p.text-muted.mb-0 (801) 745 2077
+              td.text-center 20 Sep 2016
+              td.text-center 20 Sep 2016
+              td.text-right $940.00
+              td.text-center
+                span.label.label-outline.label-primary Shipped
+              td.text-center
+                | SIG659850
+            tr
+              td
+                a(href='javascript:;') #62413
+              td
+                .media
+                  .media-left.avatar
+                    img.media-object.img-circle(src=build+'images/users/19.jpg', alt='')
+                    span.status.bg-success
+                  .media-body
+                    h5.media-heading Stephanie Silva
+                    p.text-muted.mb-0 (634) 748 2195
+              td.text-center 20 Sep 2016
+              td.text-center 20 Sep 2016
+              td.text-right $490.00
+              td.text-center
+                span.label.label-outline.label-danger Refunded
+              td.text-center
+                i.ion-minus-round
+            tr
+              td
+                a(href='javascript:;') #62414
+              td
+                .media
+                  .media-left.avatar
+                    img.media-object.img-circle(src=build+'images/users/01.jpg', alt='')
+                    span.status.bg-success
+                  .media-body
+                    h5.media-heading Harold Watson
+                    p.text-muted.mb-0 (382) 277 7247
+              td.text-center 20 Sep 2016
+              td.text-center 20 Sep 2016
+              td.text-right $230.00
+              td.text-center
+                span.label.label-outline.label-success Paid
+              td.text-center
+                i.ion-minus-round
+            tr
+              td
+                a(href='javascript:;') #62415
+              td
+                .media
+                  .media-left.avatar
+                    img.media-object.img-circle(src=build+'images/users/15.jpg', alt='')
+                    span.status.bg-success
+                  .media-body
+                    h5.media-heading Lauren Castillo
+                    p.text-muted.mb-0 (160) 403 1739
+              td.text-center 20 Sep 2016
+              td.text-center 20 Sep 2016
+              td.text-right $319.00
+              td.text-center
+                span.label.label-outline.label-purple Pending
+              td.text-center
+                i.ion-minus-round
+            tr
+              td
+                a(href='javascript:;') #62416
+              td
+                .media
+                  .media-left.avatar
+                    img.media-object.img-circle(src=build+'images/users/16.jpg', alt='')
+                    span.status.bg-success
+                  .media-body
+                    h5.media-heading Virginia Wagner
+                    p.text-muted.mb-0 (117) 791 9874
+              td.text-center 20 Sep 2016
+              td.text-center 20 Sep 2016
+              td.text-right $860.00
+              td.text-center
+                span.label.label-outline.label-primary Shipped
+              td.text-center
+                | SIG659851

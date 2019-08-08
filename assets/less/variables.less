@@ -1,0 +1,170 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+//== Colors
+//
+
+@black-light: darken(mix(@gray-base, @brand-primary, 50%), 30%);
+@black-lighter: darken(mix(@gray-base, @brand-primary, 50%), 25%);
+
+@white-base: #FFF;
+@white-blue: mix(@white-base, @brand-info, 98%);
+@white-dark: darken(@white-base, 4%);
+
+@gray-dark: darken(@gray-base, 5%);
+@gray-base: #808080;
+@gray-light: lighten(@gray-base, 10%);
+@gray-lighter: lighten(@gray-base, 40%);
+
+@brand-primary: #0667D6;
+@brand-success: #17A88B;
+@brand-info: #0FB3FF;
+@brand-warning: #FFB61E;
+@brand-danger: #E5343D;
+@brand-purple: #8E23E0;
+@brand-pink: #ED4D6E;
+
+@text-muted: @gray-light;
+@text-black: @black-lighter;
+@text-primary: darken(@brand-primary, 10%);
+@text-success: darken(@brand-success, 10%);
+@text-info: darken(@brand-info, 10%);
+@text-warning: darken(@brand-warning, 10%);
+@text-danger: darken(@brand-danger, 10%);
+@text-purple: darken(@brand-purple, 10%);
+
+@bg-default: mix(@white-base, @gray-lighter, 30%);
+@bg-black: mix(@white-base, @black-lighter, 30%);
+@bg-primary: mix(@white-base, @brand-primary, 30%);
+@bg-success: mix(@white-base, @brand-success, 30%);
+@bg-info: mix(@white-base, @brand-info, 30%);
+@bg-warning: mix(@white-base, @brand-warning, 30%);
+@bg-danger: mix(@white-base, @brand-danger, 30%);
+@bg-purple: mix(@white-base, @brand-purple, 30%);
+
+//== Scaffolding
+//
+
+@body-bg: @white-base;
+@text-color: @gray-dark;
+@link-color: @brand-primary;
+@link-hover-color: darken(@link-color, 10%);
+@font-family-base: "Lato", sans-serif;
+@font-size-base: 14px;
+@font-weight-base: 400;
+@divider-border-color: darken(@gray-lighter, 5%);
+
+//== Animate
+//
+
+@animation-duration: 0.3s;
+
+//== Header
+//
+
+@header-height: 54px;
+@header-height-lg: @header-height;
+@zindex-header: 1040;
+
+// Header icons
+
+@header-icon-font-size: 16px;
+@header-icon-padding-horizontal: 18px;
+
+// Notification bubbles 
+
+@badge-font-size: 10px;
+@badge-size: 14px;
+@dot-size: 8px;
+@scale-dot-size: 26px;
+
+// Dropdown arrow
+
+@dropdown-arrow-width: 6px;
+@zindex-dropdown-arrow: 1020;
+
+//== Main Sidebar
+//
+
+@sidebar-lg: 260px;
+@sidebar-sm: 180px;
+@sidebar-xs: 80px;
+@zindex-sidebar: 1030;
+
+// Avatar Size
+
+@avatar-size: 34px;
+@status-size: 8px;
+
+// Profile
+
+@user-padding-vertical: 20px;
+@user-padding-horizontal: 20px;
+@profile-avatar-base: 40px;
+@profile-avatar-sm: 80px;
+@profile-status-base: 10px;
+@profile-status-sm: 12px;
+
+// Nav sidebar content
+
+@nav-sb-content-padding: 20px;
+
+//== Navigation
+//
+
+// Navigation links
+
+@nav-link-padding-vertical: 10px;
+@nav-link-padding-horizontal: 15px;
+@nav-link-font-weight: 700;
+@nav-link-line-height: 48px;
+@nav-link-icon-font-size: 16px;
+@nav-link-icon-size: 28px;
+
+// Sub-menu
+
+@nav-link-sub-menu-line-height: 40px;
+@nav-link-sub-menu-padding-right: @nav-link-padding-horizontal;
+@nav-link-sub-menu-padding-left: @nav-link-sub-menu-line-height;
+@nav-link-sub-menu-dot-size: 5px;
+@nav-link-sub-menu-line-color: @gray-base;
+
+//== Page Content
+//
+
+@content-padding: 20px;
+@content-padding-xs: 10px;
+
+//== Email Sidebar
+//
+
+@zindex-email-sidebar: 1020;
+
+//== Right Sidebar
+//
+
+@right-sidebar-width: 280px;
+@right-sidebar-box-shadow: -1px 0 1px rgba(0, 0, 0, .05);
+@zindex-right-sidebar: 1030;
+
+//== Media Object
+//
+
+@media-margin-top: 25px;
+
+@mo-xs-size: 24px;
+@mo-sm-size: 28px;
+@mo-md-size: 34px;
+@mo-lg-size: 52px;
+
+// font-weight
+@font-weight: 300, 400, 700;
+
+// font-size 
+@font-size: 11, 12, 13, 14, 16, 18, 20, 22, 24, 30, 36, 48, 60;
+
+// margin, margin-top, margin-right, margin-bottom, margin-left
+// padding, padding-top, padding-right, padding-bottom, padding-left
+@distance: 0, 5, 10, 15, 20, 25, 30;

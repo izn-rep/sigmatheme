@@ -1,0 +1,66 @@
+//
+// Tables
+// --------------------------------------------------
+
+caption {
+	color: @gray-light;
+}
+
+// Baseline styles
+.table {
+	> thead,
+	> tbody,
+	> tfoot {
+		> tr {
+			> th,
+			> td {
+				padding: 12px 15px;
+				vertical-align: middle;
+				border-top: 1px solid @divider-border-color;
+			}
+		}
+	}
+	> thead > tr > th,
+	> tfoot > tr > th {
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 12px;
+		color: @gray-light;
+		border-bottom: 1px solid @divider-border-color;
+	}
+	> tbody + tbody {
+		border-top: 1px solid @divider-border-color;
+	}
+	&.no-border {
+		> thead,
+		> tbody,
+		> tfoot {
+			> tr {
+				> th,
+				> td {
+					border: none;
+				}
+			}
+		}
+	}
+}
+
+.table-bordered {
+	border: 1px solid @divider-border-color;
+	> thead,
+	> tbody,
+	> tfoot {
+		> tr {
+			> th,
+			> td {
+				border: 1px solid @divider-border-color;
+			}
+		}
+	}
+}
+
+.table-responsive {
+	@media screen and (max-width: 767px) {
+		border: 1px solid @divider-border-color;
+	}
+}

@@ -1,0 +1,323 @@
+// Right Sidebar start
+aside.right-sidebar.closed
+  ul.nav.nav-tabs.nav-justified.nav-sidebar(role='tablist')
+    li.active(role='presentation')
+      a(href='#chat', aria-controls='chat', role='tab', data-toggle='tab')
+        i.ion-ios-chatboxes-outline
+    li(role='presentation')
+      a(href='#system', aria-controls='system', role='tab', data-toggle='tab')
+        i.ion-ios-pie-outline
+    li(role='presentation')
+      a(href='#ticket', aria-controls='ticket', role='tab', data-toggle='tab')
+        i.ion-ios-list-outline
+    li(role='presentation')
+      a(href='#setting', aria-controls='setting', role='tab', data-toggle='tab')
+        i.ion-ios-gear-outline
+  .tab-content.nav-sidebar-content.mCustomScrollbar(data-mcs-theme='minimal-dark')
+    #chat.tab-pane.fade.in.active(role='tabpanel')
+      form
+        .form-group.has-feedback
+          input.form-control.rounded(type='text', aria-describedby='inputChatSearch', placeholder='Chat with...')
+          span.ion-search.form-control-feedback(aria-hidden='true')
+          span#inputChatSearch.sr-only (default)
+      .sidebar-category Online
+      ul.chat-list.mb-0.media-list
+        li.media
+          a.conversation-toggle(href='javascript:;')
+            .media-left.avatar
+              img.media-object.img-circle(src=build+'images/users/20.jpg', alt='')
+              span.status.bg-success
+            .media-body
+              h5.media-heading Crystal Wheeler
+              p.text-muted.mb-0 United States
+            .media-right
+              span.badge.bg-danger 1
+        li.media
+          a.conversation-toggle(href='javascript:;')
+            .media-left.avatar
+              img.media-object.img-circle(src=build+'images/users/01.jpg', alt='')
+              span.status.bg-success
+            .media-body
+              h5.media-heading Brian Austin
+              p.text-muted.mb-0 brianaustin@example.com
+        li.media
+          a.conversation-toggle(href='javascript:;')
+            .media-left.avatar
+              img.media-object.img-circle(src=build+'images/users/02.jpg', alt='')
+              span.status.bg-success
+            .media-body
+              h5.media-heading David Clark
+              p.text-muted.mb-0 david.clark@example.com
+        li.media
+          a.conversation-toggle(href='javascript:;')
+            .media-left.avatar
+              img.media-object.img-circle(src=build+'images/users/12.jpg', alt='')
+              span.status.bg-success
+            .media-body
+              h5.media-heading Joyce Carlson
+              p.text-muted.mb-0 (707) 680 1328
+            .media-right
+              span.badge.bg-danger 3
+        li.media
+          a.conversation-toggle(href='javascript:;')
+            .media-left.avatar
+              img.media-object.img-circle(src=build+'images/users/06.jpg', alt='')
+              span.status.bg-success
+            .media-body
+              h5.media-heading Brian Hudson
+              p.text-muted.mb-0 06/03/1989
+      .sidebar-category Away
+      ul.chat-list.mb-0.media-list
+        li.media
+          a.conversation-toggle(href='javascript:;')
+            .media-left.avatar
+              img.media-object.img-circle(src=build+'images/users/16.jpg', alt='')
+              span.status.bg-warning
+            .media-body
+              h5.media-heading Evelyn Martinez
+              p.text-muted.mb-0 evelyn_84@example.com
+            .media-right
+              span.badge.bg-danger 1
+        li.media
+          a.conversation-toggle(href='javascript:;')
+            .media-left.avatar
+              img.media-object.img-circle(src=build+'images/users/09.jpg', alt='')
+              span.status.bg-warning
+            .media-body
+              h5.media-heading Nicholas Mitchell
+              p.text-muted.mb-0 (752) 282 4218
+        li.media
+          a.conversation-toggle(href='javascript:;')
+            .media-left.avatar
+              img.media-object.img-circle(src=build+'images/users/03.jpg', alt='')
+              span.status.bg-warning
+            .media-body
+              h5.media-heading Tyler Gordon
+              p.text-muted.mb-0 tylergordon@example.com
+            .media-right
+              span.badge.bg-danger 2
+      .sidebar-category Busy
+      ul.chat-list.mb-0.media-list
+        li.media
+          a.conversation-toggle(href='javascript:;')
+            .media-left.avatar
+              img.media-object.img-circle(src=build+'images/users/15.jpg', alt='')
+              span.status.bg-danger
+            .media-body
+              h5.media-heading Stephanie Ford
+              p.text-muted.mb-0 29/06/1992
+        li.media
+          a.conversation-toggle(href='javascript:;')
+            .media-left.avatar
+              img.media-object.img-circle(src=build+'images/users/07.jpg', alt='')
+              span.status.bg-danger
+            .media-body
+              h5.media-heading Adam Sandoval
+              p.text-muted.mb-0 adam-86@example.com
+    #system.tab-pane.fade(role='tabpanel')
+      .sidebar-category System
+      ul.list-group.divider.mb-0
+        li.list-group-item
+          .block.clearfix
+            span.pull-left Current user
+            span.pull-right.text-muted lethemes
+        li.list-group-item
+          .block.clearfix
+            span.pull-left Primary domain
+            span.pull-right.text-muted lethemes.net
+        li.list-group-item
+          .block.clearfix
+            span.pull-left Home directory
+            span.pull-right.text-muted /home/lethemes
+        li.list-group-item
+          .block.clearfix
+            span.pull-left Last login
+            span.pull-right.text-muted 10/28/2016
+        li.list-group-item
+          .block.clearfix
+            span.pull-left Bandwidth
+            span.pull-right.text-muted 187.38 GB / 2000 GB
+      .sidebar-category Statistics
+      ul.list-group.mb-0
+        li.list-group-item
+          .block.clearfix.mb-10
+            span.pull-left Disk Usage
+            span.pull-right.label.label-outline.label-success 52.49%
+          .progress.progress-xs.mb-10
+            .progress-bar.progress-bar-success(role='progressbar', data-transitiongoal='52')
+          p.mb-0 250.43 GB / 498.56 GB
+        li.list-group-item
+          .block.clearfix.mb-10
+            span.pull-left Subdomains
+            span.pull-right.label.label-outline.label-danger 85.51%
+          .progress.progress-xs.mb-10
+            .progress-bar.progress-bar-danger(role='progressbar', data-transitiongoal='85')
+          p.mb-0 25 / 30
+        li.list-group-item
+          .block.clearfix.mb-10
+            span.pull-left Databases
+            span.pull-right.label.label-outline.label-purple 65.23%
+          .progress.progress-xs.mb-10
+            .progress-bar.progress-bar-purple(role='progressbar', data-transitiongoal='65')
+          p.mb-0 36 / 50
+    #ticket.tab-pane.fade(role='tabpanel')
+      ul.milestones.media-list.mb-0
+        li.media
+          .media-left.pr-15
+            img.media-object.mo-md.img-circle(src=build+'images/users/16.jpg', alt='')
+          .media-body
+            time.fs-13.text-muted(datetime='2016-12-10T20:50:48+07:00') 9 minutes ago
+            p.mt-10.mb-0
+              | Ethan Perkins 
+              span.text-success commented
+              |  on your post
+        li.media
+          .media-left.pr-15
+            i.ion-document-text.media-object.mo-md.img-circle.bg-primary.text-center
+          .media-body
+            time.fs-13.text-muted(datetime='2016-12-10T20:50:48+07:00') 20 minutes ago
+            p.mt-10.mb-0 Prepare for presentation
+        li.media
+          .media-left.pr-15
+            span.media-object.mo-md.img-circle.bg-danger.text-center.fw-700 B
+          .media-body
+            time.fs-13.text-muted(datetime='2016-12-10T20:50:48+07:00') 28 minutes ago
+            p.mt-10.mb-0
+              | Brandon Garcia 
+              span.text-danger subscribed
+              |  to Harold Fuller
+        li.media
+          .media-left.pr-15
+            img.media-object.mo-md.img-circle(src=build+'images/users/05.jpg', alt='')
+          .media-body
+            time.fs-13.text-muted(datetime='2016-12-10T20:50:48+07:00') 20 minutes ago
+            p.mt-10.mb-0 Sell 15 products to LE company
+        li.media
+          .media-left.pr-15
+            i.ion-stats-bars.media-object.mo-md.img-circle.bg-purple.text-center
+          .media-body
+            time.fs-13.text-muted(datetime='2016-12-10T20:50:48+07:00') 30 minutes ago
+            p.mt-10.mb-0 3 New products were added!
+        li.media
+          .media-left.pr-15
+            i.ion-ios-telephone.media-object.mo-md.img-circle.bg-success.text-center
+          .media-body
+            time.fs-13.text-muted(datetime='2016-12-10T20:50:48+07:00') 52 minutes ago
+            p.mt-10.mb-0 Contact to the customer service
+        li.media
+          .media-left.pr-15
+            img.media-object.mo-md.img-circle(src=build+'images/users/09.jpg', alt='')
+          .media-body
+            time.fs-13.text-muted(datetime='2016-12-10T20:50:48+07:00') 2 hours ago
+            p.mt-10.mb-0 Paul Clark purchased Sigma web app kit
+    #setting.tab-pane.fade(role='tabpanel')
+      form.form-horizontal
+        .clearfix
+          h5.pull-left.lh-1 Use SSL
+          .switch.pull-right
+            input#setting-1(type='checkbox', checked='')
+            label.switch-black(for='setting-1')
+        p.text-muted Mi mus natoque et eros metus ipsum massa adipiscing massa tincidunt ipsum ad.
+        .clearfix
+          h5.pull-left.lh-1 Use Shared Sessions
+          .switch.pull-right
+            input#setting-2(type='checkbox')
+            label.switch-black(for='setting-2')
+        p.text-muted Vel etiam scelerisque lacinia ipsum dis massa at turpis phasellus nam vehicula augue.
+        .clearfix
+          h5.pull-left.lh-1 Use SEO URLs
+          .switch.pull-right
+            input#setting-3(type='checkbox', checked='')
+            label.switch-black(for='setting-3')
+        p.text-muted Phasellus ridiculus per tincidunt feugiat cras nam hendrerit consectetur.
+        .clearfix
+          h5.pull-left.lh-1 Maintenance Mode
+          .switch.pull-right
+            input#setting-4(type='checkbox')
+            label.switch-black(for='setting-4')
+        p.text-muted Metus cursus dolor lorem suscipit in euismod metus erat turpis elementum vulputate pharetra.
+        .clearfix
+          h5.pull-left.lh-1 Allow Forgotten Password
+          .switch.pull-right
+            input#setting-5(type='checkbox', checked='')
+            label.switch-black(for='setting-5')
+        p.text-muted Hendrerit lacus volutpat senectus habitant ligula tortor.
+aside.conversation.closed
+  h5.text-center.m-0.p-20 Emma Lawrence
+    a.conversation-toggle.pull-left(href='javascript:;')
+      i.ion-close-round.text-muted
+    a.pull-right(href='javascript:;')
+      i.ion-refresh.text-muted
+  ul.chat-content.pl-20.pr-20.mCustomScrollbar(data-mcs-theme='minimal-dark')
+    li.chat-item.self
+      img.img-circle.chat-avatar(src=build+'images/users/04.jpg', alt='')
+      .chat-bubble Hello.
+      time.block.fs-12.text-muted(datetime='2016-12-10T20:50:48+07:00')
+        i.ion-clock
+        |  12 minutes ago
+    li.chat-item.other
+      img.img-circle.chat-avatar(src=build+'images/users/12.jpg', alt='')
+      .chat-bubble Hi.
+      time.block.fs-12.text-muted(datetime='2016-12-10T20:50:48+07:00')
+        i.ion-clock
+        |  11 minutes ago
+    li.chat-item.self
+      img.img-circle.chat-avatar(src=build+'images/users/04.jpg', alt='')
+      .chat-bubble How are you?
+      time.block.fs-12.text-muted(datetime='2016-12-10T20:50:48+07:00')
+        i.ion-clock
+        |  11 minutes ago
+    li.chat-item.other
+      img.img-circle.chat-avatar(src=build+'images/users/12.jpg', alt='')
+      .chat-bubble I'm good. How are you?
+      time.block.fs-12.text-muted(datetime='2016-12-10T20:50:48+07:00')
+        i.ion-clock
+        |  10 minutes ago
+    li.chat-item.self
+      img.img-circle.chat-avatar(src=build+'images/users/04.jpg', alt='')
+      .chat-bubble Good. Do you speak English?
+      time.block.fs-12.text-muted(datetime='2016-12-10T20:50:48+07:00')
+        i.ion-clock
+        |  9 minutes ago
+    li.chat-item.other
+      img.img-circle.chat-avatar(src=build+'images/users/12.jpg', alt='')
+      .chat-bubble A little. Are you American?
+      time.block.fs-12.text-muted(datetime='2016-12-10T20:50:48+07:00')
+        i.ion-clock
+        |  8 minutes ago
+    li.chat-item.self
+      img.img-circle.chat-avatar(src=build+'images/users/04.jpg', alt='')
+      .chat-bubble Yes.
+      time.block.fs-12.text-muted(datetime='2016-12-10T20:50:48+07:00')
+        i.ion-clock
+        |  8 minutes ago
+    li.chat-item.other
+      img.img-circle.chat-avatar(src=build+'images/users/12.jpg', alt='')
+      .chat-bubble Where are you from?
+      time.block.fs-12.text-muted(datetime='2016-12-10T20:50:48+07:00')
+        i.ion-clock
+        |  7 minutes ago
+    li.chat-item.self
+      img.img-circle.chat-avatar(src=build+'images/users/04.jpg', alt='')
+      .chat-bubble I'm from California.
+      time.block.fs-12.text-muted(datetime='2016-12-10T20:50:48+07:00')
+        i.ion-clock
+        |  6 minutes ago
+    li.chat-item.other
+      img.img-circle.chat-avatar(src=build+'images/users/12.jpg', alt='')
+      .chat-bubble Nice to meet you.
+      time.block.fs-12.text-muted(datetime='2016-12-10T20:50:48+07:00')
+        i.ion-clock
+        |  15 seconds ago
+    li.chat-item.self
+      img.img-circle.chat-avatar(src=build+'images/users/04.jpg', alt='')
+      .chat-bubble Nice to meet you too.
+      time.block.fs-12.text-muted(datetime='2016-12-10T20:50:48+07:00')
+        i.ion-clock
+        |  Just now
+  form.pl-20.pr-20
+    .form-group.has-feedback.mb-0
+      input.form-control.rounded(type='text', aria-describedby='inputSendMessage', placeholder='Sent a message')
+      span.ion-edit.form-control-feedback(aria-hidden='true')
+      span#inputSendMessage.sr-only (default)
+// Right Sidebar end

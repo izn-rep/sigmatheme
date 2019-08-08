@@ -1,0 +1,44 @@
+//
+// List groups
+// --------------------------------------------------
+
+.list-group {
+	&.divider {
+		.list-group-item {
+			border-bottom: 1px solid @divider-border-color;
+			border-top: none;
+			border-right: none;
+			border-left: none;
+			padding: 10px 0;
+			margin-bottom: 0;
+			&:last-child {
+				border-bottom: none;
+			}
+		}	
+	}
+	&.no-border {
+		.list-group-item {
+			border: none;
+			border-radius: 4px;
+		}
+	}
+}
+
+// Individual list items
+//
+// Use on `li`s or `div`s within the `.list-group` parent.
+
+.list-group-item {
+	border: 1px solid @divider-border-color;
+	&.active,
+	&.active:hover,
+	&.active:focus {
+		background-color: @black-lighter;
+		border-color: @black-lighter;
+	}
+}
+
+a.list-group-item,
+button.list-group-item {
+	color: @text-color;
+}

@@ -1,0 +1,46 @@
+.pagination {
+	> li {
+		> a,
+		> span {
+			color: @text-color;
+			border: 2px solid @divider-border-color;
+			padding: 5px 12px;
+			margin-left: -2px;
+		}
+	}
+	> li > a,
+	> li > span {
+		&:hover,
+		&:focus {
+			color: @text-color;
+			border-color: @divider-border-color;
+		}
+	}
+	> .active > a,
+	> .active > span {
+		&,
+		&:hover,
+		&:focus {
+			background-color: @black-lighter;
+			border-color: @black-lighter;
+		}
+	}
+}
+
+.pagination-sm {
+	> li {
+		> a,
+		> span {
+			padding: 4px 10px;
+		}
+	}
+}
+
+.pagination-lg {
+	> li {
+		> a,
+		> span {
+			padding: 9px 16px;
+		}
+	}
+}

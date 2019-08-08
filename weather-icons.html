@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sigma App - Weather Icons</title>
+    <!-- PACE-->
+    <link rel="stylesheet" type="text/css" href="plugins/PACE/themes/blue/pace-theme-flash.css">
+    <script type="text/javascript" src="plugins/PACE/pace.min.js"></script>
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" type="text/css" href="plugins/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Ionicons-->
+    <link rel="stylesheet" type="text/css" href="plugins/Ionicons/css/ionicons.min.css">
+    <!-- Malihu Scrollbar-->
+    <link rel="stylesheet" type="text/css" href="plugins/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css">
+    <!-- Animo.js-->
+    <link rel="stylesheet" type="text/css" href="plugins/animo.js/animate-animo.min.css">
+    <!-- Bootstrap Progressbar-->
+    <link rel="stylesheet" type="text/css" href="plugins/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css">
+    <!-- Weather Icons-->
+    <link rel="stylesheet" type="text/css" href="plugins/weather-icons/css/weather-icons-wind.min.css">
+    <link rel="stylesheet" type="text/css" href="plugins/weather-icons/css/weather-icons.min.css">
+    <!-- Core CSS-->
+    <link rel="stylesheet" type="text/css" href="build/css/first-layout.css">
+  </head>
+  <body>
+    <!-- Header start-->
+    <header>
+      <div class="search-bar closed">
+        <form>
+          <div class="input-group input-group-lg">
+            <input type="text" placeholder="Search for..." class="form-control"><span class="input-group-btn">
+              <button type="button" class="btn btn-default search-bar-toggle"><i class="ion-close-round"></i></button></span>
+          </div>
+        </form>
+      </div><a href="javascript:;" role="button" class="hamburger-menu pull-left"><span></span></a>
+      <form class="search-form m-10 pull-left hidden-xs">
+        <div class="form-group has-feedback mb-0">
+          <input type="text" aria-describedby="inputSearchFor" placeholder="Search for..." style="width: 180px" class="form-control rounded"><span aria-hidden="true" class="ion-search form-control-feedback"></span><span id="inputSearchFor" class="sr-only">(default)</span>
+        </div>
+      </form><a href="index.html" class="brand"><img src="build/images/logo/logo-dark.png" alt="" width="100"></a>
+      <ul class="notification-bar list-inline pull-right">
+        <li class="visible-xs"><a href="javascript:;" role="button" class="header-icon search-bar-toggle"><i class="ion-search"></i></a></li>
+        <li class="visible-lg"><a href="javascript:;" role="button" class="header-icon sidebar-control"><i class="ion-pin"></i></a></li>
+        <li class="dropdown"><a id="dropdownMenu0" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle bubble header-icon"><i class="ion-code-working"></i><span class="badge bg-danger">4</span></a>
+          <div aria-labelledby="dropdownMenu0" class="dropdown-menu dropdown-menu-right dm-small animated fadeInUp">
+            <ul data-mcs-theme="minimal-dark" class="media-list mCustomScrollbar">
+              <li class="media"><a href="javascript:;">
+                  <div class="block clearfix mb-10"><span class="pull-left">HTML5</span><span class="pull-right label label-outline label-primary">65% Complete</span></div>
+                  <div class="progress progress-xs mb-0">
+                    <div role="progressbar" data-transitiongoal="65" class="progress-bar"></div>
+                  </div></a></li>
+              <li class="media"><a href="javascript:;">
+                  <div class="block clearfix mb-10"><span class="pull-left">CSS3</span><span class="pull-right label label-outline label-success">80% Complete</span></div>
+                  <div class="progress progress-xs mb-0">
+                    <div role="progressbar" data-transitiongoal="80" class="progress-bar progress-bar-success"></div>
+                  </div></a></li>
+              <li class="media"><a href="javascript:;">
+                  <div class="block clearfix mb-10"><span class="pull-left">PHP</span><span class="pull-right label label-outline label-danger">20% Complete</span></div>
+                  <div class="progress progress-xs mb-0">
+                    <div role="progressbar" data-transitiongoal="20" class="progress-bar progress-bar-danger"></div>
+                  </div></a></li>
+              <li class="media"><a href="javascript:;">
+                  <div class="block clearfix mb-10"><span class="pull-left">Javascript</span><span class="pull-right label label-outline label-purple">45% Complete</span></div>
+                  <div class="progress progress-xs mb-0">
+                    <div role="progressbar" data-transitiongoal="45" class="progress-bar progress-bar-purple"></div>
+                  </div></a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="dropdown"><a id="dropdownMenu1" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle bubble header-icon"><i class="ion-alert"></i><span class="badge bg-danger">6</span></a>
+          <div aria-labelledby="dropdownMenu1" class="dropdown-menu dropdown-menu-right dm-medium animated fadeInUp">
+            <h5 class="dropdown-header">You have 6 notifications</h5>
+            <ul data-mcs-theme="minimal-dark" class="media-list mCustomScrollbar">
+              <li class="media"><a href="javascript:;">
+                  <div class="media-left"><i class="ion-chatbubbles media-object mo-md img-circle bg-primary text-center"></i></div>
+                  <div class="media-body">
+                    <h5 class="media-heading">Brittany Curtis</h5>
+                    <p class="text-muted mb-0">Commented on your post</p>
+                  </div>
+                  <div class="media-right text-nowrap">
+                    <time datetime="2016-12-10T20:27:48+07:00" class="fs-13 text-muted">5 mins</time>
+                  </div></a></li>
+              <li class="media"><a href="javascript:;">
+                  <div class="media-left avatar"><img src="build/images/users/11.jpg" alt="" class="media-object img-circle"><span class="status bg-danger"></span></div>
+                  <div class="media-body">
+                    <h5 class="media-heading">Judy Fowler</h5>
+                    <p class="text-muted mb-0">Sent you a new email</p>
+                  </div>
+                  <div class="media-right text-nowrap">
+                    <time datetime="2016-12-10T20:42:40+07:00" class="fs-13 text-muted">12 mins</time>
+                  </div></a></li>
+              <li class="media"><a href="javascript:;">
+                  <div class="media-left"><span class="media-object mo-md img-circle bg-success text-center fw-700">S</span></div>
+                  <div class="media-body">
+                    <h5 class="media-heading">Sean Jenkins</h5>
+                    <p class="text-muted mb-0">Sent you a new message</p>
+                  </div>
+                  <div class="media-right text-nowrap">
+                    <time datetime="2016-12-10T20:50:48+07:00" class="fs-13 text-muted">8 hours</time>
+                  </div></a></li>
+              <li class="media"><a href="javascript:;">
+                  <div class="media-left avatar"><img src="build/images/users/05.jpg" alt="" class="media-object img-circle"><span class="status bg-success"></span></div>
+                  <div class="media-body">
+                    <h5 class="media-heading">Johnny Dean</h5>
+                    <p class="text-muted mb-0">You have 8 unread messages</p>
+                  </div>
+                  <div class="media-right text-nowrap">
+                    <time datetime="2016-12-10T20:35:35+07:00" class="fs-13 text-muted">20 Oct</time>
+                  </div></a></li>
+              <li class="media"><a href="javascript:;">
+                  <div class="media-left"><i class="ion-person media-object mo-md img-circle bg-purple text-center"></i></div>
+                  <div class="media-body">
+                    <h5 class="media-heading">Jean Lawrence</h5>
+                    <p class="text-muted mb-0">Sent you a new email</p>
+                  </div>
+                  <div class="media-right text-nowrap">
+                    <time datetime="2016-12-10T20:42:40+07:00" class="fs-13 text-muted">20 Oct</time>
+                  </div></a></li>
+              <li class="media"><a href="javascript:;">
+                  <div class="media-left avatar"><img src="build/images/users/13.jpg" alt="" class="media-object img-circle"><span class="status bg-warning"></span></div>
+                  <div class="media-body">
+                    <h5 class="media-heading">Karen Reed</h5>
+                    <p class="text-muted mb-0">Commented on your post</p>
+                  </div>
+                  <div class="media-right text-nowrap">
+                    <time datetime="2016-12-10T20:27:48+07:00" class="fs-13 text-muted">20 Oct</time>
+                  </div></a></li>
+            </ul>
+            <div class="dropdown-footer"><a href="javascript:;" class="text-muted">View all notifications</a></div>
+          </div>
+        </li>
+        <li class="dropdown hidden-sm hidden-xs"><a id="dropdownMenu2" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle header-icon lh-1 pt-10 pb-10">
+            <div class="media mt-0">
+              <div class="media-left avatar"><img src="build/images/users/04.jpg" alt="" class="media-object img-circle"><span class="status bg-success"></span></div>
+              <div class="media-right media-middle pl-0">
+                <p class="fs-12 mb-0">Hi, Ryan</p>
+              </div>
+            </div></a>
+          <ul aria-labelledby="dropdownMenu2" class="dropdown-menu dropdown-menu-right animated fadeInUp">
+            <li><a href="profile.html"><i class="ion-person mr-5"></i> My Profile</a></li>
+            <li><a href="email-inbox.html"><i class="ion-filing mr-5"></i> Inbox</a></li>
+            <li><a href="profile.html"><i class="ion-gear-b mr-5"></i> Account Settings</a></li>
+            <li><a href="login.html"><i class="ion-unlocked mr-5"></i> Logout</a></li>
+          </ul>
+        </li>
+        <li><a href="javascript:;" role="button" class="right-sidebar-toggle bubble header-icon"><i class="ion-arrow-return-right"></i><span class="dot bg-danger"></span></a></li>
+      </ul>
+    </header>
+    <!-- Header end-->
+    <div class="main-container">
+      <!-- Main Sidebar start-->
+      <aside data-mcs-theme="minimal-dark" class="main-sidebar mCustomScrollbar">
+        <div class="media user">
+          <div class="media-left">
+            <div id="esp-user-profile" data-percent="66" style="height: 56px; width: 56px; line-height: 40px; padding: 8px;" class="easy-pie-chart"><img src="build/images/users/04.jpg" alt="" class="avatar img-circle"></div>
+          </div>
+          <div style="overflow: visible" class="media-body media-middle">
+            <h4 class="media-heading fs-16">Ryan Moreno</h4>
+            <div class="dropdown"><a id="dropdown-status" href="javascript:;" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true" class="dropdown-toggle"><span class="status bg-success"></span> Online <span class="caret"></span></a>
+              <ul aria-labelledby="dropdown-status" class="dropdown-menu animated fadeInUp">
+                <li><a href="#">Offline</a></li>
+                <li><a href="#">Busy</a></li>
+                <li><a href="#">Away</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="login.html">Logout</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <ul class="list-unstyled navigation mb-0">
+          <li class="sidebar-category">Main</li>
+          <li class="panel"><a role="button" data-toggle="collapse" data-parent=".navigation" href="#collapse1" aria-expanded="false" aria-controls="collapse1" class="bubble collapsed"><i class="ion-ios-home-outline bg-purple"></i><span class="sidebar-title">Dashboard</span><span class="badge bg-danger">2</span></a>
+            <ul id="collapse1" class="list-unstyled collapse">
+              <li><a href="index.html">Dashboard v1</a></li>
+              <li><a href="index-v2.html">Dashboard v2</a></li>
+            </ul>
+          </li>
+          <li class="panel"><a href="widgets.html"><i class="ion-ios-albums-outline bg-success"></i><span class="sidebar-title">Widgets</span></a></li>
+          <li class="panel"><a role="button" data-toggle="collapse" data-parent=".navigation" href="#collapse2" aria-expanded="false" aria-controls="collapse2" class="collapsed"><i class="ion-ios-printer-outline bg-primary"></i><span class="sidebar-title">Email</span></a>
+            <ul id="collapse2" class="list-unstyled collapse">
+              <li><a href="email-inbox.html">Inbox</a></li>
+              <li><a href="email-read.html">Read email</a></li>
+              <li><a href="email-compose.html">Compose email</a></li>
+            </ul>
+          </li>
+          <li class="sidebar-category">Menu Levels</li>
+          <li class="panel"><a role="button" data-toggle="collapse" data-parent=".navigation" href="#collapse20" aria-expanded="false" aria-controls="collapse20" class="collapsed"><i class="ion-ios-folder-outline bg-black"></i><span class="sidebar-title">Menu levels</span></a>
+            <ul id="collapse20" class="list-unstyled collapse">
+              <li><a role="button" data-toggle="collapse" data-parent="#collapse20" href="#collapse201" aria-expanded="false" aria-controls="collapse201" class="collapsed">Menu level 2.1</a>
+                <ul id="collapse201" class="list-unstyled collapse">
+                  <li><a href="#">Menu level 3.1</a></li>
+                  <li><a href="#">Menu level 3.2</a></li>
+                  <li><a href="#">Menu level 3.3</a></li>
+                </ul>
+              </li>
+              <li><a role="button" data-toggle="collapse" data-parent="#collapse20" href="#collapse202" aria-expanded="false" aria-controls="collapse202" class="collapsed">Menu level 2.2</a>
+                <ul id="collapse202" class="list-unstyled collapse">
+                  <li><a href="#">Menu level 3.4</a></li>
+                  <li><a role="button" data-toggle="collapse" data-parent="#collapse202" href="#collapse302" aria-expanded="false" aria-controls="collapse302" class="collapsed">Menu level 3.5</a>
+                    <ul id="collapse302" class="list-unstyled collapse">
+                      <li><a href="#">Menu level 4.1</a></li>
+                      <li><a role="button" data-toggle="collapse" data-parent="#collapse302" href="#collapse402" aria-expanded="false" aria-controls="collapse402" class="collapsed">Menu level 4.2</a>
+                        <ul id="collapse402" class="list-unstyled collapse">
+                          <li><a href="#">Menu level 5.1</a></li>
+                          <li><a href="#">Menu level 5.2</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Menu level 3.6</a></li>
+                </ul>
+              </li>
+              <li><a role="button" data-toggle="collapse" data-parent="#collapse20" href="#collapse203" aria-expanded="false" aria-controls="collapse203" class="collapsed">Menu level 2.3</a>
+                <ul id="collapse203" class="list-unstyled collapse">
+                  <li><a href="#">Menu level 3.7</a></li>
+                  <li><a href="#">Menu level 3.8</a></li>
+                  <li><a href="#">Menu level 3.9</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="sidebar-category">Components</li>
+          <li class="panel"><a role="button" data-toggle="collapse" data-parent=".navigation" href="#collapse6" aria-expanded="false" aria-controls="collapse6" class="collapsed"><i class="ion-ios-list-outline bg-black"></i><span class="sidebar-title">UI Elements</span></a>
+            <ul id="collapse6" class="list-unstyled collapse">
+              <li><a href="animations.html">Animations</a></li>
+              <li><a href="buttons.html">Buttons</a></li>
+              <li><a href="carousels.html">Carousels</a></li>
+              <li><a href="containers.html">Containers</a></li>
+              <li><a href="dialogs.html">Dialogs</a></li>
+              <li><a href="indicators.html">Indicators</a></li>
+              <li><a href="navigations.html">Navigations</a></li>
+              <li><a href="progress-bars.html">Progress bars</a></li>
+              <li><a href="typography.html">Typography</a></li>
+            </ul>
+          </li>
+          <li class="panel"><a role="button" data-toggle="collapse" data-parent=".navigation" href="#collapse9" aria-expanded="false" aria-controls="collapse9" class="collapsed"><i class="ion-ios-photos-outline bg-black"></i><span class="sidebar-title">Forms</span></a>
+            <ul id="collapse9" class="list-unstyled collapse">
+              <li><a href="forms-layouts.html">Form layouts</a></li>
+              <li><a href="basic-forms.html">Basic forms</a></li>
+              <li><a href="advanced-elements.html">Advanced elements</a></li>
+              <li><a href="forms-validation.html">Forms validation</a></li>
+              <li><a href="forms-wizard.html">Form wizard</a></li>
+              <li><a href="file-uploads.html">File uploads</a></li>
+              <li><a href="image-cropper.html">Image cropper</a></li>
+              <li><a href="text-editors.html">Text editors</a></li>
+            </ul>
+          </li>
+          <li class="panel"><a role="button" data-toggle="collapse" data-parent=".navigation" href="#collapse10" aria-expanded="false" aria-controls="collapse10" class="active collapsed"><i class="ion-ios-ionic-outline bg-black"></i><span class="sidebar-title">Icons</span></a>
+            <ul id="collapse10" class="list-unstyled collapse">
+              <li><a href="glyphicons.html">Glyphicons</a></li>
+              <li><a href="font-awesome.html">Font awesome</a></li>
+              <li><a href="material-design.html">Material design</a></li>
+              <li><a href="themify.html">Themify</a></li>
+              <li><a href="weather-icons.html" class="active">Weather</a></li>
+              <li><a href="flag-icons.html">Flag</a></li>
+            </ul>
+          </li>
+          <li class="panel"><a role="button" data-toggle="collapse" data-parent=".navigation" href="#collapse11" aria-expanded="false" aria-controls="collapse11" class="collapsed"><i class="ion-ios-browsers-outline bg-black"></i><span class="sidebar-title">Tables</span></a>
+            <ul id="collapse11" class="list-unstyled collapse">
+              <li><a href="basic-tables.html">Basic tables</a></li>
+              <li><a href="data-tables.html">Data tables</a></li>
+            </ul>
+          </li>
+          <li class="panel"><a role="button" data-toggle="collapse" data-parent=".navigation" href="#collapse12" aria-expanded="false" aria-controls="collapse12" class="collapsed"><i class="ion-ios-pie-outline bg-black"></i><span class="sidebar-title">Charts</span></a>
+            <ul id="collapse12" class="list-unstyled collapse">
+              <li><a href="flot-charts.html">Flot charts</a></li>
+              <li><a href="morris-charts.html">Morris charts</a></li>
+              <li><a href="chart-js.html">Chart.js</a></li>
+              <li><a href="chartist.html">Chartist</a></li>
+              <li><a href="other-charts.html">Other charts</a></li>
+            </ul>
+          </li>
+          <li class="panel"><a role="button" data-toggle="collapse" data-parent=".navigation" href="#collapse13" aria-expanded="false" aria-controls="collapse13" class="collapsed"><i class="ion-ios-analytics-outline bg-black"></i><span class="sidebar-title">Maps</span></a>
+            <ul id="collapse13" class="list-unstyled collapse">
+              <li><a href="vector-maps.html">Vector maps</a></li>
+              <li><a href="google-maps.html">Google maps</a></li>
+            </ul>
+          </li>
+          <li class="sidebar-category">Page kits</li>
+          <li class="panel"><a role="button" data-toggle="collapse" data-parent=".navigation" href="#collapse14" aria-expanded="false" aria-controls="collapse14" class="collapsed"><i class="ion-ios-medkit-outline bg-black"></i><span class="sidebar-title">Error pages</span></a>
+            <ul id="collapse14" class="list-unstyled collapse">
+              <li><a href="error-400.html">Error 400</a></li>
+              <li><a href="error-401.html">Error 401</a></li>
+              <li><a href="error-403.html">Error 403</a></li>
+              <li><a href="error-404.html">Error 404</a></li>
+              <li><a href="error-500.html">Error 500</a></li>
+              <li><a href="error-503.html">Error 503</a></li>
+            </ul>
+          </li>
+          <li class="panel"><a role="button" data-toggle="collapse" data-parent=".navigation" href="#collapse15" aria-expanded="false" aria-controls="collapse15" class="collapsed"><i class="ion-ios-browsers-outline bg-black"></i><span class="sidebar-title">User pages</span></a>
+            <ul id="collapse15" class="list-unstyled collapse">
+              <li><a href="login.html">Login</a></li>
+              <li><a href="register.html">Register</a></li>
+              <li><a href="forgot-password.html">Forgot password</a></li>
+              <li><a href="lock-screen.html">Lock screen</a></li>
+              <li><a href="profile.html">Profile</a></li>
+            </ul>
+          </li>
+          <li class="sidebar-category">Help</li>
+          <li class="panel"><a href="documentation.html"><i class="ion-ios-help-outline bg-black"></i><span class="sidebar-title">Documentation</span></a></li>
+        </ul>
+        <div class="sidebar-category">Downloads</div>
+        <div class="sidebar-widget">
+          <ul class="list-unstyled pl-15 pr-15">
+            <li class="mb-20">
+              <div class="block clearfix mb-10"><span class="pull-left text-muted">image_01.jpg</span><span class="pull-right label label-outline label-success">48 sec</span></div>
+              <div class="progress progress-xs mb-0">
+                <div role="progressbar" data-transitiongoal="45" class="progress-bar progress-bar-success"></div>
+              </div>
+            </li>
+            <li class="mb-20">
+              <div class="block clearfix mb-10"><span class="pull-left text-muted">image_02.jpg</span><span class="pull-right label label-outline label-purple">22 sec</span></div>
+              <div class="progress progress-xs mb-0">
+                <div role="progressbar" data-transitiongoal="58" class="progress-bar progress-bar-purple"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <!-- Main Sidebar end-->
+      <div class="page-container">
+        <div class="page-content container-fluid">
+          <div class="icon-demo">
+            <h3 class="mt-0">Daytime</h3>
+            <div class="row">
+              <div class="col-md-4 col-sm-6"><i class="wi wi-day-sunny"></i> wi-day-sunny</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-day-cloudy"></i> wi-day-cloudy</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-day-cloudy-gusts"></i> wi-day-cloudy-gusts</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-day-cloudy-windy"></i> wi-day-cloudy-windy</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-day-fog"></i> wi-day-fog</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-day-hail"></i> wi-day-hail</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-day-haze"></i> wi-day-haze</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-day-lightning"></i> wi-day-lightning</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-day-rain"></i> wi-day-rain</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-day-rain-mix"></i> wi-day-rain-mix</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-day-rain-wind"></i> wi-day-rain-wind</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-day-showers"></i> wi-day-showers</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-day-sleet"></i> wi-day-sleet</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-day-sleet-storm"></i> wi-day-sleet-storm</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-day-snow"></i> wi-day-snow</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-day-snow-thunderstorm"></i> wi-day-snow-thunderstorm</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-day-snow-wind"></i> wi-day-snow-wind</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-day-sprinkle"></i> wi-day-sprinkle</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-day-storm-showers"></i> wi-day-storm-showers</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-day-sunny-overcast"></i> wi-day-sunny-overcast</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-day-thunderstorm"></i> wi-day-thunderstorm</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-day-windy"></i> wi-day-windy</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-solar-eclipse"></i> wi-solar-eclipse</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-hot"></i> wi-hot</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-day-cloudy-high"></i> wi-day-cloudy-high</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-day-light-wind"></i> wi-day-light-wind</div>
+            </div>
+            <h3>Nighttime</h3>
+            <div class="row">
+              <div class="col-md-4 col-sm-6"><i class="wi wi-night-clear"></i> wi-night-clear</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-night-alt-cloudy"></i> wi-night-alt-cloudy</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-night-alt-cloudy-gusts"></i> wi-night-alt-cloudy-gusts</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-night-alt-cloudy-windy"></i> wi-night-alt-cloudy-windy</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-night-alt-hail"></i> wi-night-alt-hail</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-night-alt-lightning"></i> wi-night-alt-lightning</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-night-alt-rain"></i> wi-night-alt-rain</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-night-alt-rain-mix"></i> wi-night-alt-rain-mix</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-night-alt-rain-wind"></i> wi-night-alt-rain-wind</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-night-alt-showers"></i> wi-night-alt-showers</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-night-alt-sleet"></i> wi-night-alt-sleet</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-night-alt-sleet-storm"></i> wi-night-alt-sleet-storm</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-night-alt-snow"></i> wi-night-alt-snow</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-night-alt-snow-thunderstorm"></i> wi-night-alt-snow-thunderstorm</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-night-alt-snow-wind"></i> wi-night-alt-snow-wind</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-night-alt-sprinkle"></i> wi-night-alt-sprinkle</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-night-alt-storm-showers"></i> wi-night-alt-storm-showers</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-night-alt-thunderstorm"></i> wi-night-alt-thunderstorm</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-night-cloudy"></i> wi-night-cloudy</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-night-cloudy-gusts"></i> wi-night-cloudy-gusts</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-night-cloudy-windy"></i> wi-night-cloudy-windy</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-night-fog"></i> wi-night-fog</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-night-hail"></i> wi-night-hail</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-night-lightning"></i> wi-night-lightning</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-night-partly-cloudy"></i> wi-night-partly-cloudy</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-night-rain"></i> wi-night-rain</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-night-rain-mix"></i> wi-night-rain-mix</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-night-rain-wind"></i> wi-night-rain-wind</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-night-showers"></i> wi-night-showers</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-night-sleet"></i> wi-night-sleet</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-night-sleet-storm"></i> wi-night-sleet-storm</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-night-snow"></i> wi-night-snow</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-night-snow-thunderstorm"></i> wi-night-snow-thunderstorm</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-night-snow-wind"></i> wi-night-snow-wind</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-night-sprinkle"></i> wi-night-sprinkle</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-night-storm-showers"></i> wi-night-storm-showers</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-night-thunderstorm"></i> wi-night-thunderstorm</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-lunar-eclipse"></i> wi-lunar-eclipse</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-stars"></i> wi-stars</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-storm-showers"></i> wi-storm-showers</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-thunderstorm"></i> wi-thunderstorm</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-night-alt-cloudy-high"></i> wi-night-alt-cloudy-high</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-night-cloudy-high"></i> wi-night-cloudy-high</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-night-alt-partly-cloudy"></i> wi-night-alt-partly-cloudy</div>
+            </div>
+            <h3>Neutral</h3>
+            <div class="row">
+              <div class="col-md-4 col-sm-6"><i class="wi wi-cloud"></i> wi-cloud</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-cloudy"></i> wi-cloudy</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-cloudy-gusts"></i> wi-cloudy-gusts</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-cloudy-windy"></i> wi-cloudy-windy</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-fog"></i> wi-fog</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-hail"></i> wi-hail</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-rain"></i> wi-rain</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-rain-mix"></i> wi-rain-mix</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-rain-wind"></i> wi-rain-wind</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-showers"></i> wi-showers</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-sleet"></i> wi-sleet</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-snow"></i> wi-snow</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-sprinkle"></i> wi-sprinkle</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-storm-showers"></i> wi-storm-showers</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-thunderstorm"></i> wi-thunderstorm</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-snow-wind"></i> wi-snow-wind</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-snow"></i> wi-snow</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-smog"></i> wi-smog</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-smoke"></i> wi-smoke</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-lightning"></i> wi-lightning</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-raindrops"></i> wi-raindrops</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-raindrop"></i> wi-raindrop</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-dust"></i> wi-dust</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-snowflake-cold"></i> wi-snowflake-cold</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-windy"></i> wi-windy</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-strong-wind"></i> wi-strong-wind</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-sandstorm"></i> wi-sandstorm</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-earthquake"></i> wi-earthquake</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-fire"></i> wi-fire</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-flood"></i> wi-flood</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-meteor"></i> wi-meteor</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-tsunami"></i> wi-tsunami</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-volcano"></i> wi-volcano</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-hurricane"></i> wi-hurricane</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-tornado"></i> wi-tornado</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-small-craft-advisory"></i> wi-small-craft-advisory</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-gale-warning"></i> wi-gale-warning</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-storm-warning"></i> wi-storm-warning</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-hurricane-warning"></i> wi-hurricane-warning</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind-direction"></i> wi-wind-direction</div>
+            </div>
+            <h3>Miscellaneous</h3>
+            <div class="row">
+              <div class="col-md-4 col-sm-6"><i class="wi wi-alien"></i> wi-alien</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-celsius"></i> wi-celsius</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-fahrenheit"></i> wi-fahrenheit</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-degrees"></i> wi-degrees</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-thermometer"></i> wi-thermometer</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-thermometer-exterior"></i> wi-thermometer-exterior</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-thermometer-internal"></i> wi-thermometer-internal</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-cloud-down"></i> wi-cloud-down</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-cloud-up"></i> wi-cloud-up</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-cloud-refresh"></i> wi-cloud-refresh</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-horizon"></i> wi-horizon</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-horizon-alt"></i> wi-horizon-alt</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-sunrise"></i> wi-sunrise</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-sunset"></i> wi-sunset</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moonrise"></i> wi-moonrise</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moonset"></i> wi-moonset</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-refresh"></i> wi-refresh</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-refresh-alt"></i> wi-refresh-alt</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-umbrella"></i> wi-umbrella</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-barometer"></i> wi-barometer</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-humidity"></i> wi-humidity</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-na"></i> wi-na</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-train"></i> wi-train</div>
+            </div>
+            <h3>Moon Phases</h3>
+            <div class="row">
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-new"></i> wi-moon-new</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-waxing-crescent-1"></i> wi-moon-waxing-crescent-1</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-waxing-crescent-2"></i> wi-moon-waxing-crescent-2</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-waxing-crescent-3"></i> wi-moon-waxing-crescent-3</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-waxing-crescent-4"></i> wi-moon-waxing-crescent-4</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-waxing-crescent-5"></i> wi-moon-waxing-crescent-5</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-waxing-crescent-6"></i> wi-moon-waxing-crescent-6</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-first-quarter"></i> wi-moon-first-quarter</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-waxing-gibbous-1"></i> wi-moon-waxing-gibbous-1</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-waxing-gibbous-2"></i> wi-moon-waxing-gibbous-2</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-waxing-gibbous-3"></i> wi-moon-waxing-gibbous-3</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-waxing-gibbous-4"></i> wi-moon-waxing-gibbous-4</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-waxing-gibbous-5"></i> wi-moon-waxing-gibbous-5</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-waxing-gibbous-6"></i> wi-moon-waxing-gibbous-6</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-full"></i> wi-moon-full</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-waning-gibbous-1"></i> wi-moon-waning-gibbous-1</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-waning-gibbous-2"></i> wi-moon-waning-gibbous-2</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-waning-gibbous-3"></i> wi-moon-waning-gibbous-3</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-waning-gibbous-4"></i> wi-moon-waning-gibbous-4</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-waning-gibbous-5"></i> wi-moon-waning-gibbous-5</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-waning-gibbous-6"></i> wi-moon-waning-gibbous-6</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-third-quarter"></i> wi-moon-third-quarter</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-waning-crescent-1"></i> wi-moon-waning-crescent-1</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-waning-crescent-2"></i> wi-moon-waning-crescent-2</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-waning-crescent-3"></i> wi-moon-waning-crescent-3</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-waning-crescent-4"></i> wi-moon-waning-crescent-4</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-waning-crescent-5"></i> wi-moon-waning-crescent-5</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-waning-crescent-6"></i> wi-moon-waning-crescent-6</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-alt-new"></i> wi-moon-alt-new</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-alt-waxing-crescent-1"></i> wi-moon-alt-waxing-crescent-1</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-alt-waxing-crescent-2"></i> wi-moon-alt-waxing-crescent-2</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-alt-waxing-crescent-3"></i> wi-moon-alt-waxing-crescent-3</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-alt-waxing-crescent-4"></i> wi-moon-alt-waxing-crescent-4</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-alt-waxing-crescent-5"></i> wi-moon-alt-waxing-crescent-5</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-alt-waxing-crescent-6"></i> wi-moon-alt-waxing-crescent-6</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-alt-first-quarter"></i> wi-moon-alt-first-quarter</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-alt-waxing-gibbous-1"></i> wi-moon-alt-waxing-gibbous-1</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-alt-waxing-gibbous-2"></i> wi-moon-alt-waxing-gibbous-2</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-alt-waxing-gibbous-3"></i> wi-moon-alt-waxing-gibbous-3</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-alt-waxing-gibbous-4"></i> wi-moon-alt-waxing-gibbous-4</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-alt-waxing-gibbous-5"></i> wi-moon-alt-waxing-gibbous-5</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-alt-waxing-gibbous-6"></i> wi-moon-alt-waxing-gibbous-6</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-alt-full"></i> wi-moon-alt-full</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-alt-waning-gibbous-1"></i> wi-moon-alt-waning-gibbous-1</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-alt-waning-gibbous-2"></i> wi-moon-alt-waning-gibbous-2</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-alt-waning-gibbous-3"></i> wi-moon-alt-waning-gibbous-3</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-alt-waning-gibbous-4"></i> wi-moon-alt-waning-gibbous-4</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-alt-waning-gibbous-5"></i> wi-moon-alt-waning-gibbous-5</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-alt-waning-gibbous-6"></i> wi-moon-alt-waning-gibbous-6</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-alt-third-quarter"></i> wi-moon-alt-third-quarter</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-alt-waning-crescent-1"></i> wi-moon-alt-waning-crescent-1</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-alt-waning-crescent-2"></i> wi-moon-alt-waning-crescent-2</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-alt-waning-crescent-3"></i> wi-moon-alt-waning-crescent-3</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-alt-waning-crescent-4"></i> wi-moon-alt-waning-crescent-4</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-alt-waning-crescent-5"></i> wi-moon-alt-waning-crescent-5</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-moon-alt-waning-crescent-6"></i> wi-moon-alt-waning-crescent-6</div>
+            </div>
+            <h3>Time</h3>
+            <div class="row">
+              <div class="col-md-4 col-sm-6"><i class="wi wi-time-1"></i> wi-time-1</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-time-2"></i> wi-time-2</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-time-3"></i> wi-time-3</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-time-4"></i> wi-time-4</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-time-5"></i> wi-time-5</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-time-6"></i> wi-time-6</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-time-7"></i> wi-time-7</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-time-8"></i> wi-time-8</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-time-9"></i> wi-time-9</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-time-10"></i> wi-time-10</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-time-11"></i> wi-time-11</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-time-12"></i> wi-time-12</div>
+            </div>
+            <h3>Directional Arrows</h3>
+            <div class="row">
+              <div class="col-md-4 col-sm-6"><i class="wi wi-direction-up"></i> wi-direction-up</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-direction-up-right"></i> wi-direction-up-right</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-direction-right"></i> wi-direction-right</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-direction-down-right"></i> wi-direction-down-right</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-direction-down"></i> wi-direction-down</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-direction-down-left"></i> wi-direction-down-left</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-direction-left"></i> wi-direction-left</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-direction-up-left"></i> wi-direction-up-left</div>
+            </div>
+            <h3>Wind Degree Examples</h3>
+            <div class="row">
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind towards-0-deg"></i> wi-wind.towards-0-deg</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind towards-23-deg"></i> wi-wind.towards-23-deg</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind towards-45-deg"></i> wi-wind.towards-45-deg</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind towards-68-deg"></i> wi-wind.towards-68-deg</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind towards-90-deg"></i> wi-wind.towards-90-deg</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind towards-113-deg"></i> wi-wind.towards-113-deg</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind towards-135-deg"></i> wi-wind.towards-135-deg</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind towards-158-deg"></i> wi-wind.towards-158-deg</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind towards-180-deg"></i> wi-wind.towards-180-deg</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind towards-203-deg"></i> wi-wind.towards-203-deg</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind towards-225-deg"></i> wi-wind.towards-225-deg</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind towards-248-deg"></i> wi-wind.towards-248-deg</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind towards-270-deg"></i> wi-wind.towards-270-deg</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind towards-293-deg"></i> wi-wind.towards-293-deg</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind towards-313-deg"></i> wi-wind.towards-313-deg</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind towards-336-deg"></i> wi-wind.towards-336-deg</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind from-180-deg"></i> wi-wind.from-180-deg</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind from-203-deg"></i> wi-wind.from-203-deg</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind from-225-deg"></i> wi-wind.from-225-deg</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind from-248-deg"></i> wi-wind.from-248-deg</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind from-270-deg"></i> wi-wind.from-270-deg</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind from-293-deg"></i> wi-wind.from-293-deg</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind from-313-deg"></i> wi-wind.from-313-deg</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind from-336-deg"></i> wi-wind.from-336-deg</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind from-0-deg"></i> wi-wind.from-0-deg</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind from-23-deg"></i> wi-wind.from-23-deg</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind from-45-deg"></i> wi-wind.from-45-deg</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind from-68-deg"></i> wi-wind.from-68-deg</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind from-90-deg"></i> wi-wind.from-90-deg</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind from-113-deg"></i> wi-wind.from-113-deg</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind from-135-deg"></i> wi-wind.from-135-deg</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind from-158-deg"></i> wi-wind.from-158-deg</div>
+            </div>
+            <h3>Wind Cardinal Examples</h3>
+            <div class="row">
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind wi-towards-n"></i> wi-wind.wi-towards-n</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind wi-towards-nne"></i> wi-wind.wi-towards-nne</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind wi-towards-ne"></i> wi-wind.wi-towards-ne</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind wi-towards-ene"></i> wi-wind.wi-towards-ene</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind wi-towards-e"></i> wi-wind.wi-towards-e</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind wi-towards-ese"></i> wi-wind.wi-towards-ese</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind wi-towards-se"></i> wi-wind.wi-towards-se</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind wi-towards-sse"></i> wi-wind.wi-towards-sse</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind wi-towards-s"></i> wi-wind.wi-towards-s</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind wi-towards-ssw"></i> wi-wind.wi-towards-ssw</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind wi-towards-sw"></i> wi-wind.wi-towards-sw</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind wi-towards-wsw"></i> wi-wind.wi-towards-wsw</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind wi-towards-w"></i> wi-wind.wi-towards-w</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind wi-towards-wnw"></i> wi-wind.wi-towards-wnw</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind wi-towards-nw"></i> wi-wind.wi-towards-nw</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind wi-towards-nnw"></i> wi-wind.wi-towards-nnw</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind wi-from-n"></i> wi-wind.wi-from-n</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind wi-from-nne"></i> wi-wind.wi-from-nne</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind wi-from-ne"></i> wi-wind.wi-from-ne</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind wi-from-ene"></i> wi-wind.wi-from-ene</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind wi-from-e"></i> wi-wind.wi-from-e</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind wi-from-ese"></i> wi-wind.wi-from-ese</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind wi-from-se"></i> wi-wind.wi-from-se</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind wi-from-sse"></i> wi-wind.wi-from-sse</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind wi-from-s"></i> wi-wind.wi-from-s</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind wi-from-ssw"></i> wi-wind.wi-from-ssw</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind wi-from-sw"></i> wi-wind.wi-from-sw</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind wi-from-wsw"></i> wi-wind.wi-from-wsw</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind wi-from-w"></i> wi-wind.wi-from-w</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind wi-from-wnw"></i> wi-wind.wi-from-wnw</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind wi-from-nw"></i> wi-wind.wi-from-nw</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind wi-from-nnw"></i> wi-wind.wi-from-nnw</div>
+            </div>
+            <h3>Beaufort Wind Scale</h3>
+            <div class="row">
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind-beaufort-0"></i> wi-wind-beaufort-0</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind-beaufort-1"></i> wi-wind-beaufort-1</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind-beaufort-2"></i> wi-wind-beaufort-2</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind-beaufort-3"></i> wi-wind-beaufort-3</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind-beaufort-4"></i> wi-wind-beaufort-4</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind-beaufort-5"></i> wi-wind-beaufort-5</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind-beaufort-6"></i> wi-wind-beaufort-6</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind-beaufort-7"></i> wi-wind-beaufort-7</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind-beaufort-8"></i> wi-wind-beaufort-8</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind-beaufort-9"></i> wi-wind-beaufort-9</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind-beaufort-10"></i> wi-wind-beaufort-10</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind-beaufort-11"></i> wi-wind-beaufort-11</div>
+              <div class="col-md-4 col-sm-6"><i class="wi wi-wind-beaufort-12"></i> wi-wind-beaufort-12</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Right Sidebar start-->
+      <aside class="right-sidebar closed">
+        <ul role="tablist" class="nav nav-tabs nav-justified nav-sidebar">
+          <li role="presentation" class="active"><a href="#chat" aria-controls="chat" role="tab" data-toggle="tab"><i class="ion-ios-chatboxes-outline"></i></a></li>
+          <li role="presentation"><a href="#system" aria-controls="system" role="tab" data-toggle="tab"><i class="ion-ios-pie-outline"></i></a></li>
+          <li role="presentation"><a href="#ticket" aria-controls="ticket" role="tab" data-toggle="tab"><i class="ion-ios-list-outline"></i></a></li>
+          <li role="presentation"><a href="#setting" aria-controls="setting" role="tab" data-toggle="tab"><i class="ion-ios-gear-outline"></i></a></li>
+        </ul>
+        <div data-mcs-theme="minimal-dark" class="tab-content nav-sidebar-content mCustomScrollbar">
+          <div id="chat" role="tabpanel" class="tab-pane fade in active">
+            <form>
+              <div class="form-group has-feedback">
+                <input type="text" aria-describedby="inputChatSearch" placeholder="Chat with..." class="form-control rounded"><span aria-hidden="true" class="ion-search form-control-feedback"></span><span id="inputChatSearch" class="sr-only">(default)</span>
+              </div>
+            </form>
+            <div class="sidebar-category">Online</div>
+            <ul class="chat-list mb-0 media-list">
+              <li class="media"><a href="javascript:;" class="conversation-toggle">
+                  <div class="media-left avatar"><img src="build/images/users/20.jpg" alt="" class="media-object img-circle"><span class="status bg-success"></span></div>
+                  <div class="media-body">
+                    <h5 class="media-heading">Crystal Wheeler</h5>
+                    <p class="text-muted mb-0">United States</p>
+                  </div>
+                  <div class="media-right"><span class="badge bg-danger">1</span></div></a></li>
+              <li class="media"><a href="javascript:;" class="conversation-toggle">
+                  <div class="media-left avatar"><img src="build/images/users/01.jpg" alt="" class="media-object img-circle"><span class="status bg-success"></span></div>
+                  <div class="media-body">
+                    <h5 class="media-heading">Brian Austin</h5>
+                    <p class="text-muted mb-0">brianaustin@example.com</p>
+                  </div></a></li>
+              <li class="media"><a href="javascript:;" class="conversation-toggle">
+                  <div class="media-left avatar"><img src="build/images/users/02.jpg" alt="" class="media-object img-circle"><span class="status bg-success"></span></div>
+                  <div class="media-body">
+                    <h5 class="media-heading">David Clark</h5>
+                    <p class="text-muted mb-0">david.clark@example.com</p>
+                  </div></a></li>
+              <li class="media"><a href="javascript:;" class="conversation-toggle">
+                  <div class="media-left avatar"><img src="build/images/users/12.jpg" alt="" class="media-object img-circle"><span class="status bg-success"></span></div>
+                  <div class="media-body">
+                    <h5 class="media-heading">Joyce Carlson</h5>
+                    <p class="text-muted mb-0">(707) 680 1328</p>
+                  </div>
+                  <div class="media-right"><span class="badge bg-danger">3</span></div></a></li>
+              <li class="media"><a href="javascript:;" class="conversation-toggle">
+                  <div class="media-left avatar"><img src="build/images/users/06.jpg" alt="" class="media-object img-circle"><span class="status bg-success"></span></div>
+                  <div class="media-body">
+                    <h5 class="media-heading">Brian Hudson</h5>
+                    <p class="text-muted mb-0">06/03/1989</p>
+                  </div></a></li>
+            </ul>
+            <div class="sidebar-category">Away</div>
+            <ul class="chat-list mb-0 media-list">
+              <li class="media"><a href="javascript:;" class="conversation-toggle">
+                  <div class="media-left avatar"><img src="build/images/users/16.jpg" alt="" class="media-object img-circle"><span class="status bg-warning"></span></div>
+                  <div class="media-body">
+                    <h5 class="media-heading">Evelyn Martinez</h5>
+                    <p class="text-muted mb-0">evelyn_84@example.com</p>
+                  </div>
+                  <div class="media-right"><span class="badge bg-danger">1</span></div></a></li>
+              <li class="media"><a href="javascript:;" class="conversation-toggle">
+                  <div class="media-left avatar"><img src="build/images/users/09.jpg" alt="" class="media-object img-circle"><span class="status bg-warning"></span></div>
+                  <div class="media-body">
+                    <h5 class="media-heading">Nicholas Mitchell</h5>
+                    <p class="text-muted mb-0">(752) 282 4218</p>
+                  </div></a></li>
+              <li class="media"><a href="javascript:;" class="conversation-toggle">
+                  <div class="media-left avatar"><img src="build/images/users/03.jpg" alt="" class="media-object img-circle"><span class="status bg-warning"></span></div>
+                  <div class="media-body">
+                    <h5 class="media-heading">Tyler Gordon</h5>
+                    <p class="text-muted mb-0">tylergordon@example.com</p>
+                  </div>
+                  <div class="media-right"><span class="badge bg-danger">2</span></div></a></li>
+            </ul>
+            <div class="sidebar-category">Busy</div>
+            <ul class="chat-list mb-0 media-list">
+              <li class="media"><a href="javascript:;" class="conversation-toggle">
+                  <div class="media-left avatar"><img src="build/images/users/15.jpg" alt="" class="media-object img-circle"><span class="status bg-danger"></span></div>
+                  <div class="media-body">
+                    <h5 class="media-heading">Stephanie Ford</h5>
+                    <p class="text-muted mb-0">29/06/1992</p>
+                  </div></a></li>
+              <li class="media"><a href="javascript:;" class="conversation-toggle">
+                  <div class="media-left avatar"><img src="build/images/users/07.jpg" alt="" class="media-object img-circle"><span class="status bg-danger"></span></div>
+                  <div class="media-body">
+                    <h5 class="media-heading">Adam Sandoval</h5>
+                    <p class="text-muted mb-0">adam-86@example.com</p>
+                  </div></a></li>
+            </ul>
+          </div>
+          <div id="system" role="tabpanel" class="tab-pane fade">
+            <div class="sidebar-category">System</div>
+            <ul class="list-group divider mb-0">
+              <li class="list-group-item">
+                <div class="block clearfix"><span class="pull-left">Current user</span><span class="pull-right text-muted">lethemes</span></div>
+              </li>
+              <li class="list-group-item">
+                <div class="block clearfix"><span class="pull-left">Primary domain</span><span class="pull-right text-muted">lethemes.net</span></div>
+              </li>
+              <li class="list-group-item">
+                <div class="block clearfix"><span class="pull-left">Home directory</span><span class="pull-right text-muted">/home/lethemes</span></div>
+              </li>
+              <li class="list-group-item">
+                <div class="block clearfix"><span class="pull-left">Last login</span><span class="pull-right text-muted">10/28/2016</span></div>
+              </li>
+              <li class="list-group-item">
+                <div class="block clearfix"><span class="pull-left">Bandwidth</span><span class="pull-right text-muted">187.38 GB / 2000 GB</span></div>
+              </li>
+            </ul>
+            <div class="sidebar-category">Statistics</div>
+            <ul class="list-group mb-0">
+              <li class="list-group-item">
+                <div class="block clearfix mb-10"><span class="pull-left">Disk Usage</span><span class="pull-right label label-outline label-success">52.49%</span></div>
+                <div class="progress progress-xs mb-10">
+                  <div role="progressbar" data-transitiongoal="52" class="progress-bar progress-bar-success"></div>
+                </div>
+                <p class="mb-0">250.43 GB / 498.56 GB</p>
+              </li>
+              <li class="list-group-item">
+                <div class="block clearfix mb-10"><span class="pull-left">Subdomains</span><span class="pull-right label label-outline label-danger">85.51%</span></div>
+                <div class="progress progress-xs mb-10">
+                  <div role="progressbar" data-transitiongoal="85" class="progress-bar progress-bar-danger"></div>
+                </div>
+                <p class="mb-0">25 / 30</p>
+              </li>
+              <li class="list-group-item">
+                <div class="block clearfix mb-10"><span class="pull-left">Databases</span><span class="pull-right label label-outline label-purple">65.23%</span></div>
+                <div class="progress progress-xs mb-10">
+                  <div role="progressbar" data-transitiongoal="65" class="progress-bar progress-bar-purple"></div>
+                </div>
+                <p class="mb-0">36 / 50</p>
+              </li>
+            </ul>
+          </div>
+          <div id="ticket" role="tabpanel" class="tab-pane fade">
+            <ul class="milestones media-list mb-0">
+              <li class="media">
+                <div class="media-left pr-15"><img src="build/images/users/16.jpg" alt="" class="media-object mo-md img-circle"></div>
+                <div class="media-body">
+                  <time datetime="2016-12-10T20:50:48+07:00" class="fs-13 text-muted">9 minutes ago</time>
+                  <p class="mt-10 mb-0">Ethan Perkins <span class="text-success">commented</span> on your post</p>
+                </div>
+              </li>
+              <li class="media">
+                <div class="media-left pr-15"><i class="ion-document-text media-object mo-md img-circle bg-primary text-center"></i></div>
+                <div class="media-body">
+                  <time datetime="2016-12-10T20:50:48+07:00" class="fs-13 text-muted">20 minutes ago</time>
+                  <p class="mt-10 mb-0">Prepare for presentation</p>
+                </div>
+              </li>
+              <li class="media">
+                <div class="media-left pr-15"><span class="media-object mo-md img-circle bg-danger text-center fw-700">B</span></div>
+                <div class="media-body">
+                  <time datetime="2016-12-10T20:50:48+07:00" class="fs-13 text-muted">28 minutes ago</time>
+                  <p class="mt-10 mb-0">Brandon Garcia <span class="text-danger">subscribed</span> to Harold Fuller</p>
+                </div>
+              </li>
+              <li class="media">
+                <div class="media-left pr-15"><img src="build/images/users/05.jpg" alt="" class="media-object mo-md img-circle"></div>
+                <div class="media-body">
+                  <time datetime="2016-12-10T20:50:48+07:00" class="fs-13 text-muted">20 minutes ago</time>
+                  <p class="mt-10 mb-0">Sell 15 products to LE company</p>
+                </div>
+              </li>
+              <li class="media">
+                <div class="media-left pr-15"><i class="ion-stats-bars media-object mo-md img-circle bg-purple text-center"></i></div>
+                <div class="media-body">
+                  <time datetime="2016-12-10T20:50:48+07:00" class="fs-13 text-muted">30 minutes ago</time>
+                  <p class="mt-10 mb-0">3 New products were added!</p>
+                </div>
+              </li>
+              <li class="media">
+                <div class="media-left pr-15"><i class="ion-ios-telephone media-object mo-md img-circle bg-success text-center"></i></div>
+                <div class="media-body">
+                  <time datetime="2016-12-10T20:50:48+07:00" class="fs-13 text-muted">52 minutes ago</time>
+                  <p class="mt-10 mb-0">Contact to the customer service</p>
+                </div>
+              </li>
+              <li class="media">
+                <div class="media-left pr-15"><img src="build/images/users/09.jpg" alt="" class="media-object mo-md img-circle"></div>
+                <div class="media-body">
+                  <time datetime="2016-12-10T20:50:48+07:00" class="fs-13 text-muted">2 hours ago</time>
+                  <p class="mt-10 mb-0">Paul Clark purchased Sigma web app kit</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="setting" role="tabpanel" class="tab-pane fade">
+            <form class="form-horizontal">
+              <div class="clearfix">
+                <h5 class="pull-left lh-1">Use SSL</h5>
+                <div class="switch pull-right">
+                  <input id="setting-1" type="checkbox" checked="">
+                  <label for="setting-1" class="switch-black"></label>
+                </div>
+              </div>
+              <p class="text-muted">Mi mus natoque et eros metus ipsum massa adipiscing massa tincidunt ipsum ad.</p>
+              <div class="clearfix">
+                <h5 class="pull-left lh-1">Use Shared Sessions</h5>
+                <div class="switch pull-right">
+                  <input id="setting-2" type="checkbox">
+                  <label for="setting-2" class="switch-black"></label>
+                </div>
+              </div>
+              <p class="text-muted">Vel etiam scelerisque lacinia ipsum dis massa at turpis phasellus nam vehicula augue.</p>
+              <div class="clearfix">
+                <h5 class="pull-left lh-1">Use SEO URLs</h5>
+                <div class="switch pull-right">
+                  <input id="setting-3" type="checkbox" checked="">
+                  <label for="setting-3" class="switch-black"></label>
+                </div>
+              </div>
+              <p class="text-muted">Phasellus ridiculus per tincidunt feugiat cras nam hendrerit consectetur.</p>
+              <div class="clearfix">
+                <h5 class="pull-left lh-1">Maintenance Mode</h5>
+                <div class="switch pull-right">
+                  <input id="setting-4" type="checkbox">
+                  <label for="setting-4" class="switch-black"></label>
+                </div>
+              </div>
+              <p class="text-muted">Metus cursus dolor lorem suscipit in euismod metus erat turpis elementum vulputate pharetra.</p>
+              <div class="clearfix">
+                <h5 class="pull-left lh-1">Allow Forgotten Password</h5>
+                <div class="switch pull-right">
+                  <input id="setting-5" type="checkbox" checked="">
+                  <label for="setting-5" class="switch-black"></label>
+                </div>
+              </div>
+              <p class="text-muted">Hendrerit lacus volutpat senectus habitant ligula tortor.</p>
+            </form>
+          </div>
+        </div>
+      </aside>
+      <aside class="conversation closed">
+        <h5 class="text-center m-0 p-20">Emma Lawrence<a href="javascript:;" class="conversation-toggle pull-left"><i class="ion-close-round text-muted"></i></a><a href="javascript:;" class="pull-right"><i class="ion-refresh text-muted"></i></a></h5>
+        <ul data-mcs-theme="minimal-dark" class="chat-content pl-20 pr-20 mCustomScrollbar">
+          <li class="chat-item self"><img src="build/images/users/04.jpg" alt="" class="img-circle chat-avatar">
+            <div class="chat-bubble">Hello.</div>
+            <time datetime="2016-12-10T20:50:48+07:00" class="block fs-12 text-muted"><i class="ion-clock"></i> 12 minutes ago</time>
+          </li>
+          <li class="chat-item other"><img src="build/images/users/12.jpg" alt="" class="img-circle chat-avatar">
+            <div class="chat-bubble">Hi.</div>
+            <time datetime="2016-12-10T20:50:48+07:00" class="block fs-12 text-muted"><i class="ion-clock"></i> 11 minutes ago</time>
+          </li>
+          <li class="chat-item self"><img src="build/images/users/04.jpg" alt="" class="img-circle chat-avatar">
+            <div class="chat-bubble">How are you?</div>
+            <time datetime="2016-12-10T20:50:48+07:00" class="block fs-12 text-muted"><i class="ion-clock"></i> 11 minutes ago</time>
+          </li>
+          <li class="chat-item other"><img src="build/images/users/12.jpg" alt="" class="img-circle chat-avatar">
+            <div class="chat-bubble">I'm good. How are you?</div>
+            <time datetime="2016-12-10T20:50:48+07:00" class="block fs-12 text-muted"><i class="ion-clock"></i> 10 minutes ago</time>
+          </li>
+          <li class="chat-item self"><img src="build/images/users/04.jpg" alt="" class="img-circle chat-avatar">
+            <div class="chat-bubble">Good. Do you speak English?</div>
+            <time datetime="2016-12-10T20:50:48+07:00" class="block fs-12 text-muted"><i class="ion-clock"></i> 9 minutes ago</time>
+          </li>
+          <li class="chat-item other"><img src="build/images/users/12.jpg" alt="" class="img-circle chat-avatar">
+            <div class="chat-bubble">A little. Are you American?</div>
+            <time datetime="2016-12-10T20:50:48+07:00" class="block fs-12 text-muted"><i class="ion-clock"></i> 8 minutes ago</time>
+          </li>
+          <li class="chat-item self"><img src="build/images/users/04.jpg" alt="" class="img-circle chat-avatar">
+            <div class="chat-bubble">Yes.</div>
+            <time datetime="2016-12-10T20:50:48+07:00" class="block fs-12 text-muted"><i class="ion-clock"></i> 8 minutes ago</time>
+          </li>
+          <li class="chat-item other"><img src="build/images/users/12.jpg" alt="" class="img-circle chat-avatar">
+            <div class="chat-bubble">Where are you from?</div>
+            <time datetime="2016-12-10T20:50:48+07:00" class="block fs-12 text-muted"><i class="ion-clock"></i> 7 minutes ago</time>
+          </li>
+          <li class="chat-item self"><img src="build/images/users/04.jpg" alt="" class="img-circle chat-avatar">
+            <div class="chat-bubble">I'm from California.</div>
+            <time datetime="2016-12-10T20:50:48+07:00" class="block fs-12 text-muted"><i class="ion-clock"></i> 6 minutes ago</time>
+          </li>
+          <li class="chat-item other"><img src="build/images/users/12.jpg" alt="" class="img-circle chat-avatar">
+            <div class="chat-bubble">Nice to meet you.</div>
+            <time datetime="2016-12-10T20:50:48+07:00" class="block fs-12 text-muted"><i class="ion-clock"></i> 15 seconds ago</time>
+          </li>
+          <li class="chat-item self"><img src="build/images/users/04.jpg" alt="" class="img-circle chat-avatar">
+            <div class="chat-bubble">Nice to meet you too.</div>
+            <time datetime="2016-12-10T20:50:48+07:00" class="block fs-12 text-muted"><i class="ion-clock"></i> Just now</time>
+          </li>
+        </ul>
+        <form class="pl-20 pr-20">
+          <div class="form-group has-feedback mb-0">
+            <input type="text" aria-describedby="inputSendMessage" placeholder="Sent a message" class="form-control rounded"><span aria-hidden="true" class="ion-edit form-control-feedback"></span><span id="inputSendMessage" class="sr-only">(default)</span>
+          </div>
+        </form>
+      </aside>
+      <!-- Right Sidebar end-->
+    </div>
+    <!-- jQuery-->
+    <script type="text/javascript" src="plugins/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript-->
+    <script type="text/javascript" src="plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Malihu Scrollbar-->
+    <script type="text/javascript" src="plugins/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!-- Animo.js-->
+    <script type="text/javascript" src="plugins/animo.js/animo.min.js"></script>
+    <!-- Bootstrap Progressbar-->
+    <script type="text/javascript" src="plugins/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <!-- jQuery Easy Pie Chart-->
+    <script type="text/javascript" src="plugins/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+    <!-- Core JS-->
+    <script type="text/javascript" src="build/js/first-layout/app.js"></script>
+    <script type="text/javascript" src="build/js/first-layout/demo.js"></script>
+  </body>
+</html>

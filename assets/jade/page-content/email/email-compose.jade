@@ -1,0 +1,78 @@
+.page-content.container-fluid
+  .email-sidebar.mCustomScrollbar(data-mcs-theme='minimal-dark')
+    a.btn.btn-rounded.btn-success.mb-20(href='email-compose.html')
+      i.ion-paintbrush.mr-5
+      |  Compose
+    .list-group.no-border
+      a.list-group-item(href='javascript:;')
+        i.ion-filing
+        |  Inbox (5)
+      a.list-group-item(href='javascript:;')
+        i.ion-paper-airplane
+        |  Sent
+      a.list-group-item(href='javascript:;')
+        i.ion-edit
+        |  Drafts (2)
+      a.list-group-item(href='javascript:;')
+        i.ion-trash-b
+        |  Trash (98)
+      a.list-group-item(href='javascript:;')
+        i.ion-pricetag
+        |  Important
+    h6.text-uppercase Folders
+    .list-group.no-border
+      a.list-group-item(href='javascript:;')
+        i.ion-folder
+        |  Newsletter
+      a.list-group-item(href='javascript:;')
+        i.ion-folder
+        |  Friend
+      a.list-group-item(href='javascript:;')
+        i.ion-folder
+        |  Company
+      a.list-group-item(href='javascript:;')
+        i.ion-folder
+        |  Web app
+    h6.text-uppercase Labels
+    .list-group.no-border
+      a.list-group-item(href='javascript:;')
+        i.ion-record.text-danger
+        |  Family
+      a.list-group-item(href='javascript:;')
+        i.ion-record.text-success
+        |  Work
+      a.list-group-item(href='javascript:;')
+        i.ion-record.text-primary
+        |  Shop
+      a.list-group-item(href='javascript:;')
+        i.ion-record.text-warning
+        |  Google
+    .block.mb-10
+      span 1.5 GB Left
+    .progress.progress-xs.mb-0
+      .progress-bar.progress-bar-danger(role='progressbar', data-transitiongoal='80')
+  .email-content
+    .email-heading
+      .row
+        .col-sm-6
+          a.btn.btn-primary.email-sidebar-toggle(href='#')
+            i.ion-navicon-round
+          .btn-group
+            button.btn.btn-default(type='button')
+              i.ion-briefcase
+            button.btn.btn-default(type='button')
+              i.ion-trash-b
+        .col-sm-6
+          .btn-group
+            button.btn.btn-success.btn-block(type='button')
+              i.ion-paper-airplane.mr-5
+              |  Send
+    form
+      .form-group
+        label(for='inputMailTo') To
+        input#inputMailTo.form-control(type='text', required='')
+      .form-group
+        label(for='inputMailSubject') Subject
+        input#inputMailSubject.form-control(type='text', required='')
+      .form-group
+        textarea#email-editor

@@ -1,0 +1,27 @@
+.btn-group {
+	.btn + .btn,
+	.btn + .btn-group,
+	.btn-group + .btn,
+	.btn-group + .btn-group {
+		margin-left: -2px;
+	}
+}
+
+.btn-group {
+	&.btn-rounded {
+		button:first-child {
+			border-radius: 100px;
+		}
+		button:last-child {
+			border-radius: 100px;
+		}
+	}
+}
+
+.btn-group.open .dropdown-toggle {
+	box-shadow: none;
+}
+
+.btn-group-xs > .btn { &:extend(.btn-xs); }
+.btn-group-sm > .btn { &:extend(.btn-sm); }
+.btn-group-lg > .btn { &:extend(.btn-lg); }

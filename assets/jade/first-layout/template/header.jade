@@ -1,0 +1,155 @@
+// Header start
+header
+  .search-bar.closed
+    form
+      .input-group.input-group-lg
+        input.form-control(type='text', placeholder='Search for...')
+        span.input-group-btn
+          button.btn.btn-default.search-bar-toggle(type='button')
+            i.ion-close-round
+  a.hamburger-menu.pull-left(href='javascript:;', role='button')
+    span
+  form.search-form.m-10.pull-left.hidden-xs
+    .form-group.has-feedback.mb-0
+      input.form-control.rounded(type='text', aria-describedby='inputSearchFor', placeholder='Search for...', style='width: 180px')
+      span.ion-search.form-control-feedback(aria-hidden='true')
+      span#inputSearchFor.sr-only (default)
+  a.brand(href='index.html')
+    img(src=build+'images/logo/logo-dark.png', alt='', width='100')
+  ul.notification-bar.list-inline.pull-right
+    li.visible-xs
+      a.header-icon.search-bar-toggle(href='javascript:;', role='button')
+        i.ion-search
+    li.visible-lg
+      a.header-icon.sidebar-control(href='javascript:;', role='button')
+        i.ion-pin
+    li.dropdown
+      a#dropdownMenu0.dropdown-toggle.bubble.header-icon(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+        i.ion-code-working
+        span.badge.bg-danger 4
+      .dropdown-menu.dropdown-menu-right.dm-small.animated.fadeInUp(aria-labelledby='dropdownMenu0')
+        ul.media-list.mCustomScrollbar(data-mcs-theme='minimal-dark')
+          li.media
+            a(href='javascript:;')
+              .block.clearfix.mb-10
+                span.pull-left HTML5
+                span.pull-right.label.label-outline.label-primary 65% Complete
+              .progress.progress-xs.mb-0
+                .progress-bar(role='progressbar', data-transitiongoal='65')
+          li.media
+            a(href='javascript:;')
+              .block.clearfix.mb-10
+                span.pull-left CSS3
+                span.pull-right.label.label-outline.label-success 80% Complete
+              .progress.progress-xs.mb-0
+                .progress-bar.progress-bar-success(role='progressbar', data-transitiongoal='80')
+          li.media
+            a(href='javascript:;')
+              .block.clearfix.mb-10
+                span.pull-left PHP
+                span.pull-right.label.label-outline.label-danger 20% Complete
+              .progress.progress-xs.mb-0
+                .progress-bar.progress-bar-danger(role='progressbar', data-transitiongoal='20')
+          li.media
+            a(href='javascript:;')
+              .block.clearfix.mb-10
+                span.pull-left Javascript
+                span.pull-right.label.label-outline.label-purple 45% Complete
+              .progress.progress-xs.mb-0
+                .progress-bar.progress-bar-purple(role='progressbar', data-transitiongoal='45')
+    li.dropdown
+      a#dropdownMenu1.dropdown-toggle.bubble.header-icon(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+        i.ion-alert
+        span.badge.bg-danger 6
+      .dropdown-menu.dropdown-menu-right.dm-medium.animated.fadeInUp(aria-labelledby='dropdownMenu1')
+        h5.dropdown-header You have 6 notifications
+        ul.media-list.mCustomScrollbar(data-mcs-theme='minimal-dark')
+          li.media
+            a(href='javascript:;')
+              .media-left
+                i.ion-chatbubbles.media-object.mo-md.img-circle.bg-primary.text-center
+              .media-body
+                h5.media-heading Brittany Curtis
+                p.text-muted.mb-0 Commented on your post
+              .media-right.text-nowrap
+                time.fs-13.text-muted(datetime='2016-12-10T20:27:48+07:00') 5 mins
+          li.media
+            a(href='javascript:;')
+              .media-left.avatar
+                img.media-object.img-circle(src=build+'images/users/11.jpg', alt='')
+                span.status.bg-danger
+              .media-body
+                h5.media-heading Judy Fowler
+                p.text-muted.mb-0 Sent you a new email
+              .media-right.text-nowrap
+                time.fs-13.text-muted(datetime='2016-12-10T20:42:40+07:00') 12 mins
+          li.media
+            a(href='javascript:;')
+              .media-left
+                span.media-object.mo-md.img-circle.bg-success.text-center.fw-700 S
+              .media-body
+                h5.media-heading Sean Jenkins
+                p.text-muted.mb-0 Sent you a new message
+              .media-right.text-nowrap
+                time.fs-13.text-muted(datetime='2016-12-10T20:50:48+07:00') 8 hours
+          li.media
+            a(href='javascript:;')
+              .media-left.avatar
+                img.media-object.img-circle(src=build+'images/users/05.jpg', alt='')
+                span.status.bg-success
+              .media-body
+                h5.media-heading Johnny Dean
+                p.text-muted.mb-0 You have 8 unread messages
+              .media-right.text-nowrap
+                time.fs-13.text-muted(datetime='2016-12-10T20:35:35+07:00') 20 Oct
+          li.media
+            a(href='javascript:;')
+              .media-left
+                i.ion-person.media-object.mo-md.img-circle.bg-purple.text-center
+              .media-body
+                h5.media-heading Jean Lawrence
+                p.text-muted.mb-0 Sent you a new email
+              .media-right.text-nowrap
+                time.fs-13.text-muted(datetime='2016-12-10T20:42:40+07:00') 20 Oct
+          li.media
+            a(href='javascript:;')
+              .media-left.avatar
+                img.media-object.img-circle(src=build+'images/users/13.jpg', alt='')
+                span.status.bg-warning
+              .media-body
+                h5.media-heading Karen Reed
+                p.text-muted.mb-0 Commented on your post
+              .media-right.text-nowrap
+                time.fs-13.text-muted(datetime='2016-12-10T20:27:48+07:00') 20 Oct
+        .dropdown-footer
+          a.text-muted(href='javascript:;') View all notifications
+    li.dropdown.hidden-sm.hidden-xs
+      a#dropdownMenu2.dropdown-toggle.header-icon.lh-1.pt-10.pb-10(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+        .media.mt-0
+          .media-left.avatar
+            img.media-object.img-circle(src=build+'images/users/04.jpg', alt='')
+            span.status.bg-success
+          .media-right.media-middle.pl-0
+            p.fs-12.mb-0 Hi, Ryan
+      ul.dropdown-menu.dropdown-menu-right.animated.fadeInUp(aria-labelledby='dropdownMenu2')
+        li
+          a(href='profile.html')
+            i.ion-person.mr-5
+            |  My Profile
+        li
+          a(href='email-inbox.html')
+            i.ion-filing.mr-5
+            |  Inbox
+        li
+          a(href='profile.html')
+            i.ion-gear-b.mr-5
+            |  Account Settings
+        li
+          a(href='login.html')
+            i.ion-unlocked.mr-5
+            |  Logout
+    li
+      a.right-sidebar-toggle.bubble.header-icon(href='javascript:;', role='button')
+        i.ion-arrow-return-right
+        span.dot.bg-danger
+// Header end

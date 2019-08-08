@@ -1,0 +1,147 @@
+.page-content.container-fluid
+  .email-sidebar.mCustomScrollbar(data-mcs-theme='minimal-dark')
+    a.btn.btn-rounded.btn-success.mb-20(href='email-compose.html')
+      i.ion-paintbrush.mr-5
+      |  Compose
+    .list-group.no-border
+      a.list-group-item(href='javascript:;')
+        i.ion-filing
+        |  Inbox (5)
+      a.list-group-item(href='javascript:;')
+        i.ion-paper-airplane
+        |  Sent
+      a.list-group-item(href='javascript:;')
+        i.ion-edit
+        |  Drafts (2)
+      a.list-group-item(href='javascript:;')
+        i.ion-trash-b
+        |  Trash (98)
+      a.list-group-item(href='javascript:;')
+        i.ion-pricetag
+        |  Important
+    h6.text-uppercase Folders
+    .list-group.no-border
+      a.list-group-item(href='javascript:;')
+        i.ion-folder
+        |  Newsletter
+      a.list-group-item(href='javascript:;')
+        i.ion-folder
+        |  Friend
+      a.list-group-item(href='javascript:;')
+        i.ion-folder
+        |  Company
+      a.list-group-item(href='javascript:;')
+        i.ion-folder
+        |  Web app
+    h6.text-uppercase Labels
+    .list-group.no-border
+      a.list-group-item(href='javascript:;')
+        i.ion-record.text-danger
+        |  Family
+      a.list-group-item(href='javascript:;')
+        i.ion-record.text-success
+        |  Work
+      a.list-group-item(href='javascript:;')
+        i.ion-record.text-primary
+        |  Shop
+      a.list-group-item(href='javascript:;')
+        i.ion-record.text-warning
+        |  Google
+    .block.mb-10
+      span 1.5 GB Left
+    .progress.progress-xs.mb-0
+      .progress-bar.progress-bar-danger(role='progressbar', data-transitiongoal='80')
+  .email-content
+    .email-heading
+      .row
+        .col-sm-6
+          .media
+            .media-left.avatar
+              img.media-object.img-circle(src=build+'images/users/12.jpg', alt='')
+              span.status.bg-success
+            .media-body(style='width:auto')
+              h5.media-heading Helen Sullivan
+              p.text-muted.mb-0
+                a(href='#') helen_93@gmail.com
+                |  to me
+        .col-sm-6
+          .btn-toolbar.inline-block(role='toolbar', aria-label='Toolbar with button groups')
+            a.btn.btn-primary.email-sidebar-toggle(href='#')
+              i.ion-navicon-round
+            .btn-group
+              button.btn.btn-outline.btn-default(type='button') Reply
+              button.btn.btn-outline.btn-default.dropdown-toggle(type='button', data-toggle='dropdown', aria-expanded='false')
+                span.caret
+                span.sr-only Toggle Dropdown
+              ul.dropdown-menu.pull-right.animated.fadeInDown(role='menu')
+                li
+                  a(href='#') Reply
+                li
+                  a(href='#') Reply To All
+                li
+                  a(href='#') Forward
+                li
+                  a(href='#') Something else here
+                li.divider
+                li
+                  a(href='#') Print
+                li
+                  a(href='#') Mark as spam
+                li
+                  a(href='#') Mark as unread
+                li
+                  a(href='#') Delete this message
+            .btn-group(role='group', aria-label='Second group')
+              button.btn.btn-outline.btn-default(type='button')
+                i.ion-arrow-left-c
+              button.btn.btn-outline.btn-default(type='button')
+                i.ion-arrow-right-c
+    .email-single
+      h3.fw-400 [ThemeForest] New comment on "Sigma - Responsive Web App Kit"
+      p.drop-cap Scelerisque lobortis arcu torquent donec duis. Mi vestibulum convallis habitant, feugiat dictumst aenean dui morbi porta justo. Lobortis ullamcorper sed, cum platea feugiat neque sociosqu nec neque maecenas suspendisse magnis. Rhoncus pretium potenti maecenas? Habitant ad convallis tincidunt curae; neque. Dis aliquam congue fermentum. Torquent fermentum porttitor faucibus sodales arcu, torquent habitasse pharetra integer mus curabitur. Tristique congue netus congue, non facilisis. Posuere vehicula.
+      p
+        img.img-responsive(src=build+'images/backgrounds/01.jpg', alt='')
+      p Lobortis platea habitasse curabitur accumsan suscipit aptent sodales cubilia congue. A mus imperdiet egestas lobortis fusce ullamcorper. Quam placerat, sed lectus sed conubia pharetra congue! Interdum tempor nibh at. Rutrum ante quisque ullamcorper consectetur? Est feugiat cubilia donec id dolor hac nisi posuere dis? Dapibus conubia facilisi porta enim fringilla platea tincidunt. Parturient aliquam fringilla ut egestas pharetra habitasse malesuada egestas cum. Congue tellus praesent sodales mi at. Tortor senectus feugiat blandit rutrum pharetra metus ullamcorper. Tristique, faucibus massa cursus lacinia tristique sociosqu. Cursus rutrum volutpat varius cursus lacinia pellentesque natoque enim phasellus. Metus sodales est posuere.
+      hr
+      .row
+        .col-sm-4
+          .thumbnail
+            img(src=build+'images/backgrounds/07.jpg', alt='')
+            .text-right.caption.pb-0
+              ul.list-inline.mb-0
+                li
+                  a(href='#')
+                    i.ion-share.text-success
+                li
+                  a(href='#')
+                    i.ion-heart.text-danger
+        .col-sm-4
+          .thumbnail
+            img(src=build+'images/backgrounds/08.jpg', alt='')
+            .text-right.caption.pb-0
+              ul.list-inline.mb-0
+                li
+                  a(href='#')
+                    i.ion-share.text-success
+                li
+                  a(href='#')
+                    i.ion-heart.text-danger
+        .col-sm-4
+          .thumbnail
+            img(src=build+'images/backgrounds/09.jpg', alt='')
+            .text-right.caption.pb-0
+              ul.list-inline.mb-0
+                li
+                  a(href='#')
+                    i.ion-share.text-success
+                li
+                  a(href='#')
+                    i.ion-heart.text-danger
+      textarea#email-editor
+      .text-right
+        button.btn.btn-success(type='button')
+          i.ion-paper-airplane.mr-5
+          |  Send
+        button.btn.btn-default(type='button')
+          i.ion-trash-b.mr-5
+          |  Cancel

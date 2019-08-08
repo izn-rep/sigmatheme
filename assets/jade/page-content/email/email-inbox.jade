@@ -1,0 +1,297 @@
+.page-content.container-fluid
+  .email-sidebar.mCustomScrollbar(data-mcs-theme='minimal-dark')
+    a.btn.btn-rounded.btn-success.mb-20(href='email-compose.html')
+      i.ion-paintbrush.mr-5
+      |  Compose
+    .list-group.no-border
+      a.list-group-item.active(href='javascript:;')
+        i.ion-filing
+        |  Inbox (5)
+      a.list-group-item(href='javascript:;')
+        i.ion-paper-airplane
+        |  Sent
+      a.list-group-item(href='javascript:;')
+        i.ion-edit
+        |  Drafts (2)
+      a.list-group-item(href='javascript:;')
+        i.ion-trash-b
+        |  Trash (98)
+      a.list-group-item(href='javascript:;')
+        i.ion-pricetag
+        |  Important
+    h6.text-uppercase Folders
+    .list-group.no-border
+      a.list-group-item(href='javascript:;')
+        i.ion-folder
+        |  Newsletter
+      a.list-group-item(href='javascript:;')
+        i.ion-folder
+        |  Friend
+      a.list-group-item(href='javascript:;')
+        i.ion-folder
+        |  Company
+      a.list-group-item(href='javascript:;')
+        i.ion-folder
+        |  Web app
+    h6.text-uppercase Labels
+    .list-group.no-border
+      a.list-group-item(href='javascript:;')
+        i.ion-record.text-danger
+        |  Family
+      a.list-group-item(href='javascript:;')
+        i.ion-record.text-success
+        |  Work
+      a.list-group-item(href='javascript:;')
+        i.ion-record.text-primary
+        |  Shop
+      a.list-group-item(href='javascript:;')
+        i.ion-record.text-warning
+        |  Google
+    .block.mb-10
+      span 1.5 GB Left
+    .progress.progress-xs.mb-0
+      .progress-bar.progress-bar-danger(role='progressbar', data-transitiongoal='80')
+  .email-content
+    .email-heading
+      .row
+        .col-sm-6
+          a.btn.btn-primary.email-sidebar-toggle(href='#')
+            i.ion-navicon-round
+          .btn-group
+            button.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown')
+              | All 
+              span.caret
+            ul.dropdown-menu.animated.fadeInUp(role='menu')
+              li
+                a(href='#') All
+              li
+                a(href='#') None
+              li
+                a(href='#') Read
+              li
+                a(href='#') Unread
+              li
+                a(href='#') Starred
+              li
+                a(href='#') Unstarred
+          button.btn.btn-default(type='button')
+            i.ion-refresh
+          .btn-group
+            button.btn.btn-default(type='button')
+              i.ion-briefcase
+            button.btn.btn-default(type='button')
+              i.ion-folder
+            button.btn.btn-default(type='button')
+              i.ion-trash-b
+        .col-sm-6
+          .form-group.has-feedback.mb-0.inline-block
+            input.form-control.rounded(type='text', aria-describedby='searchMailList', placeholder='Search email...', style='width: 180px')
+            span.ion-search.form-control-feedback(aria-hidden='true')
+            span#searchMailList.sr-only (default)
+    .table-responsive
+      table.table.table-hover
+        tbody
+          tr.unread
+            td.email-select
+              .checkbox.checkbox-custom.m-0
+                input#chk1(type='checkbox')
+                label(for='chk1')
+            td.email-select
+              i.ion-star
+            td.email-from
+              .media
+                .media-left
+                  span.media-object.mo-md.img-circle.bg-primary.text-center.fw-700 B
+                .media-body
+                  h5.media-heading Brittany Curtis
+                  p.text-muted.mb-0
+                    time.fs-13.mr-5(datetime='2016-12-10T20:27:48+07:00') 06:35 PM 
+                    i.ion-android-attach.fs-16
+            td
+              a(href='email-read.html')
+                span.email-title Sociosqu amet dignissim curabitur libero
+                span.email-summary  - Pharetra aptent lectus eu mattis litora montes...
+          tr.unread
+            td.email-select
+              .checkbox.checkbox-custom.m-0
+                input#chk2(type='checkbox')
+                label(for='chk2')
+            td.email-select
+              i.ion-star
+            td.email-from
+              .media
+                .media-left
+                  img.media-object.mo-md.img-circle(src=build+'images/users/02.jpg', alt='')
+                .media-body
+                  h5.media-heading Jose Curtis
+                  p.text-muted.mb-0
+                    time.fs-13.mr-5(datetime='2016-12-10T20:27:48+07:00') 05:15 AM 
+                    i.ion-android-attach.fs-16
+            td
+              a(href='email-read.html')
+                span.email-title Libero enim pretium cras
+                span.email-summary  - Sapien faucibus fames conubia sodales mus quam ligula...
+          tr
+            td.email-select
+              .checkbox.checkbox-custom.m-0
+                input#chk3(type='checkbox')
+                label(for='chk3')
+            td.email-select
+              i.ion-star.text-warning
+            td.email-from
+              .media
+                .media-left
+                  img.media-object.mo-md.img-circle(src=build+'images/users/01.jpg', alt='')
+                .media-body
+                  h5.media-heading Jacob Vasquez
+                  p.text-muted.mb-0
+                    time.fs-13.mr-5(datetime='2016-12-10T20:27:48+07:00') 16 Oct 2016
+            td
+              a(href='email-read.html')
+                span.email-title Ante ultrices tempus
+                span.email-summary  - Arcu non magna lorem mauris gravida iaculis non inceptos...
+          tr.unread
+            td.email-select
+              .checkbox.checkbox-custom.m-0
+                input#chk4(type='checkbox')
+                label(for='chk4')
+            td.email-select
+              i.ion-star.text-warning
+            td.email-from
+              .media
+                .media-left
+                  span.media-object.mo-md.img-circle.bg-purple.text-center.fw-700 D
+                .media-body
+                  h5.media-heading Debra Spencer
+                  p.text-muted.mb-0
+                    time.fs-13.mr-5(datetime='2016-12-10T20:27:48+07:00') 16 Oct 2016
+            td
+              a(href='email-read.html')
+                span.email-title Massa metus euismod egestas egestas
+                span.email-summary  - Duis aliquet dui laoreet ad neque class dui...
+          tr
+            td.email-select
+              .checkbox.checkbox-custom.m-0
+                input#chk5(type='checkbox')
+                label(for='chk5')
+            td.email-select
+              i.ion-star
+            td.email-from
+              .media
+                .media-left
+                  span.media-object.mo-md.img-circle.bg-black.text-center.fw-700 S
+                .media-body
+                  h5.media-heading Stephanie May
+                  p.text-muted.mb-0
+                    time.fs-13.mr-5(datetime='2016-12-10T20:27:48+07:00') 16 Oct 2016 
+                    i.ion-android-attach.fs-16
+            td
+              a(href='email-read.html')
+                span.email-title Et parturient phasellus rhoncus
+                span.email-summary  - Vivamus elit sapien risus fames nulla primis magna...
+          tr
+            td.email-select
+              .checkbox.checkbox-custom.m-0
+                input#chk6(type='checkbox')
+                label(for='chk6')
+            td.email-select
+              i.ion-star
+            td.email-from
+              .media
+                .media-left
+                  img.media-object.mo-md.img-circle(src=build+'images/users/16.jpg', alt='')
+                .media-body
+                  h5.media-heading Diana Wilson
+                  p.text-muted.mb-0
+                    time.fs-13.mr-5(datetime='2016-12-10T20:27:48+07:00') 15 Oct 2016
+            td
+              a(href='email-read.html')
+                span.email-title Aliquam fusce sollicitudin
+                span.email-summary  - Pulvinar non orci ligula dictum magna adipiscing class...
+          tr.unread
+            td.email-select
+              .checkbox.checkbox-custom.m-0
+                input#chk7(type='checkbox')
+                label(for='chk7')
+            td.email-select
+              i.ion-star.text-warning
+            td.email-from
+              .media
+                .media-left
+                  span.media-object.mo-md.img-circle.bg-danger.text-center.fw-700 P
+                .media-body
+                  h5.media-heading Patrick Gardner
+                  p.text-muted.mb-0
+                    time.fs-13.mr-5(datetime='2016-12-10T20:27:48+07:00') 12 Oct 2016 
+                    i.ion-android-attach.fs-16
+            td
+              a(href='email-read.html')
+                span.email-title Convallis natoque urna pulvinar tempor
+                span.email-summary  - Ultrices ultricies ante leo duis pretium...
+          tr.unread
+            td.email-select
+              .checkbox.checkbox-custom.m-0
+                input#chk8(type='checkbox')
+                label(for='chk8')
+            td.email-select
+              i.ion-star
+            td.email-from
+              .media
+                .media-left
+                  span.media-object.mo-md.img-circle.bg-success.text-center.fw-700 W
+                .media-body
+                  h5.media-heading William Taylor
+                  p.text-muted.mb-0
+                    time.fs-13.mr-5(datetime='2016-12-10T20:27:48+07:00') 10 Oct 2016 
+                    i.ion-android-attach.fs-16
+            td
+              a(href='email-read.html')
+                span.email-title Laoreet dignissim tellus aenean
+                span.email-summary  - Sagittis donec at eu rutrum rhoncus per commodo...
+          tr
+            td.email-select
+              .checkbox.checkbox-custom.m-0
+                input#chk9(type='checkbox')
+                label(for='chk9')
+            td.email-select
+              i.ion-star
+            td.email-from
+              .media
+                .media-left
+                  img.media-object.mo-md.img-circle(src=build+'images/users/18.jpg', alt='')
+                .media-body
+                  h5.media-heading Laura Andrews
+                  p.text-muted.mb-0
+                    time.fs-13.mr-5(datetime='2016-12-10T20:27:48+07:00') 10 Oct 2016 
+                    i.ion-android-attach.fs-16
+            td
+              a(href='email-read.html')
+                span.email-title Condimentum laoreet mi cursus
+                span.email-summary  - Convallis faucibus sed pharetra consectetur...
+          tr
+            td.email-select
+              .checkbox.checkbox-custom.m-0
+                input#chk10(type='checkbox')
+                label(for='chk10')
+            td.email-select
+              i.ion-star.text-warning
+            td.email-from
+              .media
+                .media-left
+                  span.media-object.mo-md.img-circle.bg-warning.text-center.fw-700 M
+                .media-body
+                  h5.media-heading Maria Pearson
+                  p.text-muted.mb-0
+                    time.fs-13.mr-5(datetime='2016-12-10T20:27:48+07:00') 08 Oct 2016
+            td
+              a(href='email-read.html')
+                span.email-title Eu pharetra vulputate
+                span.email-summary  - Dui lobortis eu tortor dictum massa lorem aenean pretium...
+    .clearfix
+      .pull-left
+        | Showing 1 - 10 of 100
+      .btn-group.pull-right
+        button.btn.btn-default(type='button')
+          i.ion-arrow-left-c
+        button.btn.btn-default(type='button')
+          i.ion-arrow-right-c

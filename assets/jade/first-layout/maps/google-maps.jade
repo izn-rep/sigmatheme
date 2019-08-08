@@ -1,0 +1,213 @@
+extends ../template/template.jade
+block js
+  include ../../core-js/maps/google-maps.jade
+block custom-js
+  script(type='text/javascript', src=build+'js/page-content/maps/google-maps.js')
+block title
+  title Sigma App - Google Maps
+block navigation
+  ul.list-unstyled.navigation.mb-0
+    li.sidebar-category Main
+    li.panel
+      a.bubble.collapsed(role='button', data-toggle='collapse', data-parent='.navigation', href='#collapse1', aria-expanded='false', aria-controls='collapse1')
+        i.ion-ios-home-outline.bg-purple
+        span.sidebar-title Dashboard
+        span.badge.bg-danger 2
+      ul#collapse1.list-unstyled.collapse
+        li
+          a(href='index.html') Dashboard v1
+        li
+          a(href='index-v2.html') Dashboard v2
+    li.panel
+      a(href='widgets.html')
+        i.ion-ios-albums-outline.bg-success
+        span.sidebar-title Widgets
+    li.panel
+      a.collapsed(role='button', data-toggle='collapse', data-parent='.navigation', href='#collapse2', aria-expanded='false', aria-controls='collapse2')
+        i.ion-ios-printer-outline.bg-primary
+        span.sidebar-title Email
+      ul#collapse2.list-unstyled.collapse
+        li
+          a(href='email-inbox.html') Inbox
+        li
+          a(href='email-read.html') Read email
+        li
+          a(href='email-compose.html') Compose email
+    li.sidebar-category Menu Levels
+    li.panel
+      a.collapsed(role='button', data-toggle='collapse', data-parent='.navigation', href='#collapse20', aria-expanded='false', aria-controls='collapse20')
+        i.ion-ios-folder-outline.bg-black
+        span.sidebar-title Menu levels
+      ul#collapse20.list-unstyled.collapse
+        li
+          a.collapsed(role='button', data-toggle='collapse', data-parent='#collapse20', href='#collapse201', aria-expanded='false', aria-controls='collapse201') Menu level 2.1
+          ul#collapse201.list-unstyled.collapse
+            li
+              a(href='#') Menu level 3.1
+            li
+              a(href='#') Menu level 3.2
+            li
+              a(href='#') Menu level 3.3
+        li
+          a.collapsed(role='button', data-toggle='collapse', data-parent='#collapse20', href='#collapse202', aria-expanded='false', aria-controls='collapse202') Menu level 2.2
+          ul#collapse202.list-unstyled.collapse
+            li
+              a(href='#') Menu level 3.4
+            li
+              a.collapsed(role='button', data-toggle='collapse', data-parent='#collapse202', href='#collapse302', aria-expanded='false', aria-controls='collapse302') Menu level 3.5
+              ul#collapse302.list-unstyled.collapse
+                li
+                  a(href='#') Menu level 4.1
+                li
+                  a.collapsed(role='button', data-toggle='collapse', data-parent='#collapse302', href='#collapse402', aria-expanded='false', aria-controls='collapse402') Menu level 4.2
+                  ul#collapse402.list-unstyled.collapse
+                    li
+                      a(href='#') Menu level 5.1
+                    li
+                      a(href='#') Menu level 5.2
+            li
+              a(href='#') Menu level 3.6
+        li
+          a.collapsed(role='button', data-toggle='collapse', data-parent='#collapse20', href='#collapse203', aria-expanded='false', aria-controls='collapse203') Menu level 2.3
+          ul#collapse203.list-unstyled.collapse
+            li
+              a(href='#') Menu level 3.7
+            li
+              a(href='#') Menu level 3.8
+            li
+              a(href='#') Menu level 3.9
+    li.sidebar-category Components
+    li.panel
+      a.collapsed(role='button', data-toggle='collapse', data-parent='.navigation', href='#collapse6', aria-expanded='false', aria-controls='collapse6')
+        i.ion-ios-list-outline.bg-black
+        span.sidebar-title UI Elements
+      ul#collapse6.list-unstyled.collapse
+        li
+          a(href='animations.html') Animations
+        li
+          a(href='buttons.html') Buttons
+        li
+          a(href='carousels.html') Carousels
+        li
+          a(href='containers.html') Containers
+        li
+          a(href='dialogs.html') Dialogs
+        li
+          a(href='indicators.html') Indicators
+        li
+          a(href='navigations.html') Navigations
+        li
+          a(href='progress-bars.html') Progress bars
+        li
+          a(href='typography.html') Typography
+    li.panel
+      a.collapsed(role='button', data-toggle='collapse', data-parent='.navigation', href='#collapse9', aria-expanded='false', aria-controls='collapse9')
+        i.ion-ios-photos-outline.bg-black
+        span.sidebar-title Forms
+      ul#collapse9.list-unstyled.collapse
+        li
+          a(href='forms-layouts.html') Form layouts
+        li
+          a(href='basic-forms.html') Basic forms
+        li
+          a(href='advanced-elements.html') Advanced elements
+        li
+          a(href='forms-validation.html') Forms validation
+        li
+          a(href='forms-wizard.html') Form wizard
+        li
+          a(href='file-uploads.html') File uploads
+        li
+          a(href='image-cropper.html') Image cropper
+        li
+          a(href='text-editors.html') Text editors
+    li.panel
+      a.collapsed(role='button', data-toggle='collapse', data-parent='.navigation', href='#collapse10', aria-expanded='false', aria-controls='collapse10')
+        i.ion-ios-ionic-outline.bg-black
+        span.sidebar-title Icons
+      ul#collapse10.list-unstyled.collapse
+        li
+          a(href='glyphicons.html') Glyphicons
+        li
+          a(href='font-awesome.html') Font awesome
+        li
+          a(href='material-design.html') Material design
+        li
+          a(href='themify.html') Themify
+        li
+          a(href='weather-icons.html') Weather
+        li
+          a(href='flag-icons.html') Flag
+    li.panel
+      a.collapsed(role='button', data-toggle='collapse', data-parent='.navigation', href='#collapse11', aria-expanded='false', aria-controls='collapse11')
+        i.ion-ios-browsers-outline.bg-black
+        span.sidebar-title Tables
+      ul#collapse11.list-unstyled.collapse
+        li
+          a(href='basic-tables.html') Basic tables
+        li
+          a(href='data-tables.html') Data tables
+    li.panel
+      a.collapsed(role='button', data-toggle='collapse', data-parent='.navigation', href='#collapse12', aria-expanded='false', aria-controls='collapse12')
+        i.ion-ios-pie-outline.bg-black
+        span.sidebar-title Charts
+      ul#collapse12.list-unstyled.collapse
+        li
+          a(href='flot-charts.html') Flot charts
+        li
+          a(href='morris-charts.html') Morris charts
+        li
+          a(href='chart-js.html') Chart.js
+        li
+          a(href='chartist.html') Chartist
+        li
+          a(href='other-charts.html') Other charts
+    li.panel
+      a.active.collapsed(role='button', data-toggle='collapse', data-parent='.navigation', href='#collapse13', aria-expanded='false', aria-controls='collapse13')
+        i.ion-ios-analytics-outline.bg-black
+        span.sidebar-title Maps
+      ul#collapse13.list-unstyled.collapse
+        li
+          a(href='vector-maps.html') Vector maps
+        li
+          a.active(href='google-maps.html') Google maps
+    li.sidebar-category Page kits
+    li.panel
+      a.collapsed(role='button', data-toggle='collapse', data-parent='.navigation', href='#collapse14', aria-expanded='false', aria-controls='collapse14')
+        i.ion-ios-medkit-outline.bg-black
+        span.sidebar-title Error pages
+      ul#collapse14.list-unstyled.collapse
+        li
+          a(href='error-400.html') Error 400
+        li
+          a(href='error-401.html') Error 401
+        li
+          a(href='error-403.html') Error 403
+        li
+          a(href='error-404.html') Error 404
+        li
+          a(href='error-500.html') Error 500
+        li
+          a(href='error-503.html') Error 503
+    li.panel
+      a.collapsed(role='button', data-toggle='collapse', data-parent='.navigation', href='#collapse15', aria-expanded='false', aria-controls='collapse15')
+        i.ion-ios-browsers-outline.bg-black
+        span.sidebar-title User pages
+      ul#collapse15.list-unstyled.collapse
+        li
+          a(href='login.html') Login
+        li
+          a(href='register.html') Register
+        li
+          a(href='forgot-password.html') Forgot password
+        li
+          a(href='lock-screen.html') Lock screen
+        li
+          a(href='profile.html') Profile
+    li.sidebar-category Help
+    li.panel
+      a(href='documentation.html')
+        i.ion-ios-help-outline.bg-black
+        span.sidebar-title Documentation
+block page-content
+  include ../../page-content/maps/google-maps.jade

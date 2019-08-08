@@ -1,0 +1,83 @@
+//
+// Panels
+// --------------------------------------------------
+
+// Base class
+.panel {
+	margin-bottom: @content-padding;
+	box-shadow: none;
+}
+
+.panel-body {
+	padding: 20px;
+}
+
+.panel-heading {
+	padding: 15px 20px;
+}
+
+.panel-title {
+	font-size: 18px;
+	> a,
+	> small,
+	> .small,
+	> small > a,
+	> .small > a {
+		color: inherit;
+	}
+}
+
+.panel {
+	> .panel-body + .table,
+	> .panel-body + .table-responsive,
+	> .table + .panel-body,
+	> .table-responsive + .panel-body {
+		border-top: 1px solid @divider-border-color;
+	}
+}
+
+.panel-group {
+	margin-bottom: @content-padding;
+}
+
+.panel-default {
+	.panel-variant(@gray-lighter; @text-color; @bg-default; @gray-lighter);
+}
+.panel-primary {
+	.panel-variant(@brand-primary; @text-primary; @bg-primary; @brand-primary);
+}
+.panel-success {
+	.panel-variant(@brand-success; @text-success; @bg-success; @brand-success);
+}
+.panel-info {
+	.panel-variant(@brand-info; @text-info; @bg-info; @brand-info);
+}
+.panel-warning {
+	.panel-variant(@brand-warning; @text-warning; @bg-warning; @brand-warning);
+}
+.panel-danger {
+	.panel-variant(@brand-danger; @text-danger; @bg-danger; @brand-danger);
+}
+
+// Contextual variations
+.panel-variant(@border; @heading-text-color; @heading-bg-color; @heading-border) {
+	border-color: darken(@border, 5%);
+
+	& > .panel-heading {
+		color: @heading-text-color;
+		background-color: @heading-bg-color;
+		border-color: darken(@heading-border, 5%);
+		
+		+ .panel-collapse > .panel-body {
+			border-top-color: darken(@border, 5%);
+		}
+	}
+	& > .panel-footer {
+		+ .panel-collapse > .panel-body {
+			border-bottom-color: darken(@border, 5%);
+		}
+	}
+}
+
+
+	

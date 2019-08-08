@@ -1,0 +1,200 @@
+.page-content.container-fluid
+  .row
+    .col-md-6
+      .widget
+        .widget-heading
+          h3.widget-title Bootstrap Filestyle
+        .widget-body
+          input#exampleInputFile.filestyle(type='file', data-buttontext='Choose file', data-buttonname='btn-black', data-iconname='ti-image')
+      .widget
+        .widget-heading
+          h3.widget-title Bootstrap Maxlength
+        .widget-body
+          form
+            .form-group
+              label Default usage
+              input#default-maxlength.form-control(type='text', maxlength='25')
+            .form-group
+              label Change the threshold value
+              input#threshold-maxlength.form-control(type='text', maxlength='25')
+            .form-group
+              label Few options
+              input#moreoptions-maxlength.form-control(type='text', maxlength='25')
+            .form-group
+              label All the options
+              input#alloptions-maxlength.form-control(type='text', maxlength='25')
+            .form-group
+              label What about textareas?
+              textarea#textarea-maxlength.form-control(maxlength='255', rows='2', placeholder='This textarea has a limit of 225 chars.')
+            .form-group
+              label Let's play with the position
+              input#placement-maxlength.form-control(type='text', maxlength='25')
+      .widget
+        .widget-heading
+          h3.widget-title jQuery Minicolors
+        .widget-body
+          form
+            .form-group
+              label Hue (default)
+              input#hue-minicolors.form-control(type='text', value='#9b59b6')
+            .form-group
+              label Saturation
+              input#saturation-minicolors.form-control(type='text', value='#3498db')
+            .form-group
+              label Brightness
+              input#brightness-minicolors.form-control(type='text', value='#2ecc71')
+            .form-group
+              label Wheel
+              input#wheel-minicolors.form-control(type='text', value='#1abc9c')
+            .form-group
+              label Hidden input
+              input#hidden-minicolors.form-control(type='hidden', value='#bdc3c7')
+            .form-group
+              label Inline
+              br
+              input#inline-minicolors.form-control(type='text', value='#bdc3c7')
+            .form-group
+              label Bottom right
+              input#bottom-right-minicolors.form-control(type='text', value='#1abc9c')
+            .form-group
+              label Top left
+              input#top-left-minicolors.form-control(type='text', value='#1abc9c')
+            .form-group
+              label Top right
+              input#top-right-minicolors.form-control(type='text', value='#1abc9c')
+            .form-group
+              label RGB
+              input#rgb-minicolors.form-control(type='text', value='rgb(155, 89, 182)')
+            .form-group
+              label RGB(A)
+              input#rgba-minicolors.form-control(type='text', value='rgba(155, 89, 182,0.5)')
+            .form-group
+              label Input group
+              .input-group
+                input#input-group-minicolors.form-control(type='text', value='#1abc9c')
+                span.input-group-btn
+                  button.btn.btn-outline.btn-default(type='button') Button
+    .col-md-6
+      .widget
+        .widget-heading
+          h3.widget-title Bootstrap Touchspin
+        .widget-body
+          form
+            .form-group
+              label Postfix
+              input#postfix-touchspin.form-control(type='text', value='55')
+            .form-group
+              label Prefix
+              input#prefix-touchspin.form-control(type='text', value='55')
+            .form-group
+              label Vertical buttons with custom icons
+              input#vertical-touchspin.form-control(type='text')
+            .form-group
+              label Button postfix
+              input#button-touchspin.form-control(type='text')
+            .form-group
+              label Button group
+              .input-group
+                input#group-touchspin.form-control(type='text', value='50')
+                .input-group-btn
+                  button.btn.btn-outline.btn-default(type='button') Action
+                  button.btn.btn-outline.btn-default.dropdown-toggle(type='button', data-toggle='dropdown')
+                    span.caret
+                    span.sr-only Toggle Dropdown
+                  ul.dropdown-menu.pull-right.animated.fadeInDown(role='menu')
+                    li
+                      a(href='#') Action
+                    li
+                      a(href='#') Another action
+                    li
+                      a(href='#') Something else here
+                    li.divider
+                    li
+                      a(href='#') Separated link
+            .form-group
+              label Change button class
+              input#change-touchspin.form-control(type='text', value='50')
+      .widget
+        .widget-heading
+          h3.widget-title Bootstrap Date Range Picker
+        .widget-body
+          .btn-toolbar
+            button#daterangepicker.btn.btn-raised.btn-black(type='button')
+              i.ti-calendar 
+              span
+      .widget
+        .widget-heading
+          h3.widget-title Bootstrap Date Picker
+        .widget-body
+          form
+            .form-group
+              label Minimum setup
+              #datetimepicker1.input-group.date
+                input.form-control(type='text')
+                span.input-group-addon
+                  span.ti-calendar
+            .form-group
+              label Custom formats
+              #datetimepicker3.input-group.date
+                input.form-control(type='text')
+                span.input-group-addon
+                  span.glyphicon.glyphicon-time
+            .form-group
+              label Enabled/Disabled dates
+              #datetimepicker5.input-group.date
+                input.form-control(type='text')
+                span.input-group-addon
+                  span.ti-calendar
+            .form-group
+              label Custom icon
+              #datetimepicker8.input-group.date
+                input.form-control(type='text')
+                span.input-group-addon
+                  span.ti-calendar
+            .form-group
+              label View mode
+              #datetimepicker9.input-group.date
+                input.form-control(type='text')
+                span.input-group-addon
+                  span.glyphicon.glyphicon-calendar
+            .form-group
+              label Inline
+              #datetimepicker12
+      .widget
+        .widget-heading
+          h3.widget-title Geocomplete
+        .widget-body
+          form.form-horizontal
+            .form-group
+              label.col-sm-2.control-label Address
+              .col-sm-10
+                input#geocomplete.form-control.typeahead(type='text', placeholder='Type in an address')
+            .form-group
+              label.col-sm-2.control-label Map
+              .col-sm-10
+                .map_canvas(style='height: 300px')
+            .form-group
+              label.col-sm-2.control-label Attribute
+              .col-sm-10
+                ul.attribute
+                  li
+                    | Location: 
+                    span(data-geo='location')
+                  li
+                    | Route: 
+                    span(data-geo='route')
+                  li
+                    | Street Number: 
+                    span(data-geo='street_number')
+                  li
+                    | Postal Code: 
+                    span(data-geo='postal_code')
+                  li
+                    | Locality: 
+                    span(data-geo='locality')
+                  li
+                    | Country Code: 
+                    span(data-geo='country_short')
+                  li
+                    | State: 
+                    span(data-geo='administrative_area_level_1')

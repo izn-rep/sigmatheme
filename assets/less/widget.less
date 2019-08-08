@@ -1,0 +1,220 @@
+// Widget
+// -------------------------
+
+.widget {
+	margin-bottom: @content-padding;
+	border: 1px solid @divider-border-color;
+	border-radius: 4px;
+	.expand {
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+}
+.widget-heading {
+	padding: 20px;
+	+ .widget-body {
+		padding-top: 0;
+	}
+}
+.widget-tools {
+	margin-bottom: 0;
+	> li {
+		float: left;
+		padding: 0 10px;
+		&:last-child {
+			padding-right: 0;
+		}
+		a {
+			color: @gray-light;
+		}
+	}
+}
+.widget-title {
+	margin: 0;
+	font-size: 18px;
+	color: @black-lighter;
+}
+.widget-body {
+	padding: 20px;
+}
+
+// Follow List
+// -------------------------
+
+.follow-list {
+	li {
+		margin-top: 0;
+		> a {
+			padding: 12px 0;
+			display: block;
+			color: @text-color;
+		}
+	}
+}
+
+// Chat Content
+// -------------------------
+
+.chat-content {
+	.chat-item {
+		padding: @avatar-size / 2 @avatar-size / 2 10px @avatar-size / 2;
+		position: relative;
+		&.self {
+			.chat-bubble {
+				background-color: @gray-lighter;
+				margin-right: 25px;
+				padding: 15px 10px 15px 20px;
+			}
+			.chat-avatar {
+				left: 0;
+				top: 0;
+			}
+		}
+		&.other {
+			text-align: right;
+			.chat-bubble {
+				background-color: @black-lighter;
+				color: @white-base;
+				margin-left: 25px;
+				text-align: left;
+				padding: 15px 20px 15px 10px;
+			}
+			.chat-avatar {
+				right: 0;
+				top: 0;
+			}
+		}
+	}
+	.chat-avatar {
+		width: @avatar-size;
+		height: @avatar-size;
+		line-height: @avatar-size;
+		position: absolute;
+	}
+	.chat-bubble {
+		border-radius: 4px;
+		display: inline-block;
+		margin-bottom: 3px;
+	}
+}
+
+// Activity List
+// -----------------------------
+
+.activity-list {
+	.media-left {
+		min-width: 140px;
+	}
+	> li {
+		position: relative;
+		padding: 10px 0 10px 41px;
+		&:before {
+			content: "";
+			position: absolute;
+			left: 5px;
+			top: 0;
+			height: 100%;
+			border-left: 1px solid @divider-border-color;
+		}
+		&:after {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 14px;
+			height: 11px;
+			width: 11px;
+			border-radius: 50%;
+			border: 2px solid @gray-light;
+			background-color: @white-base;
+		}
+	}
+}
+
+.activity-list.activity-sm {
+	> li {
+		padding: 10px 0 10px 25px;
+	}
+}
+
+.activity-list {
+	> li {
+		&.activity-primary {
+			.activity-variant(@brand-primary);
+		}
+		&.activity-success {
+			.activity-variant(@brand-success);
+		}
+		&.activity-info {
+			.activity-variant(@brand-info);
+		}
+		&.activity-purple {
+			.activity-variant(@brand-purple);
+		}
+		&.activity-warning {
+			.activity-variant(@brand-warning);
+		}
+		&.activity-danger {
+			.activity-variant(@brand-danger);
+		}
+		&.activity-white {
+			.activity-variant(@white-base);
+		}
+	}
+}
+
+.activity-variant(@border-color) {
+	&:after {
+		border-color: @border-color;
+	}
+}
+
+// Milestones
+// -----------------------------
+
+.milestones {
+	> li {
+		position: relative;
+		margin: 0;
+		padding-bottom: 20px;
+		&:last-child {
+			padding-bottom: 0;
+		}
+		&:before {
+			content: "";
+			position: absolute;
+			left: @mo-md-size / 2;
+			top: 0;
+			height: 100%;
+			border-left: 1px solid @divider-border-color;
+			z-index: -1;
+		}
+	}
+}
+
+// Upcoming Events
+// -----------------------------
+
+.events-header {
+	font-size: 18px;
+	height: 50px;
+	line-height: 50px;
+	background-color: rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+.draggable {
+	li {
+		&:first-child {
+			padding-top: 0;
+		}
+		padding: 12px 0;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+		cursor: move;
+		&.ui-draggable-dragging {
+			padding: 12px 10px;
+			background-color: @white-base;
+			border-bottom: none;
+			color: @text-color;
+			box-shadow: 0 1px 1px rgba(0,0,0,.05);
+		}
+	}
+}

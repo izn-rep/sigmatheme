@@ -1,0 +1,25 @@
+// Text input groups
+// -------------------------
+.input-group-addon {
+	border: 1px solid transparent;
+}
+
+.input-group-btn {
+	> .btn {
+		+ .btn {
+			margin-left: -2px;
+		}
+	}
+	&:first-child {
+		> .btn,
+		> .btn-group {
+			margin-right: 0; 
+		}
+	}
+	&:last-child {
+		> .btn,
+		> .btn-group {
+			margin-left: 0;
+		}
+	}
+}

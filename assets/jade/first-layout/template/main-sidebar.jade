@@ -1,0 +1,40 @@
+// Main Sidebar start
+aside.main-sidebar.mCustomScrollbar(data-mcs-theme='minimal-dark')
+  .media.user
+    .media-left
+      #esp-user-profile.easy-pie-chart(data-percent='66', style='height: 56px; width: 56px; line-height: 40px; padding: 8px;')
+        img.avatar.img-circle(src=build+'images/users/04.jpg', alt='')
+    .media-body.media-middle(style='overflow: visible')
+      h4.media-heading.fs-16 Ryan Moreno
+      .dropdown
+        a#dropdown-status.dropdown-toggle(href='javascript:;', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='true')
+          span.status.bg-success
+          |  Online 
+          span.caret
+        ul.dropdown-menu.animated.fadeInUp(aria-labelledby='dropdown-status')
+          li
+            a(href='#') Offline
+          li
+            a(href='#') Busy
+          li
+            a(href='#') Away
+          li.divider(role='separator')
+          li
+            a(href='login.html') Logout
+  block navigation
+  .sidebar-category Downloads
+  .sidebar-widget
+    ul.list-unstyled.pl-15.pr-15
+      li.mb-20
+        .block.clearfix.mb-10
+          span.pull-left.text-muted image_01.jpg
+          span.pull-right.label.label-outline.label-success 48 sec
+        .progress.progress-xs.mb-0
+          .progress-bar.progress-bar-success(role='progressbar', data-transitiongoal='45')
+      li.mb-20
+        .block.clearfix.mb-10
+          span.pull-left.text-muted image_02.jpg
+          span.pull-right.label.label-outline.label-purple 22 sec
+        .progress.progress-xs.mb-0
+          .progress-bar.progress-bar-purple(role='progressbar', data-transitiongoal='58')
+// Main Sidebar end
